@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>New ticket</title>
+  </head>
+  <body>
+    <main class="help-desk">
+      <div class="help-desk__search-box">
+        <div class="t-container">
+          <div class="t-col t-col_12">
+            <h3 class="h3">Есть вопрос?</h3>
+            <input type="text" class="help-desk__search" value="" placeholder="Поиск по частым вопросам"
+              data-attr-lang="RU">
+          </div>
+        </div>
+      </div>
+      <div class="t-container help-desk__body">
+        <div class="t-col t-col_8 help-desk__content help-desk__content--left">
+          <a class="help-desk__back-link" href="#">← Назад</a>
+          <h3 class="help-desk__header h3">Новое обращение</h3>
+          <form class="help-desk__ask-form ask-form" method="post" action="https://tilda.cc">
+            <div class="ask-form__item-group">
+              <label class="ask-form__label" for="category">Категория</label>
+              <div class="ask-form__select-wrapper">
+                <select class="ask-form__select" name="category" id="category" required>
+                  <option class="ask-form__select-option" value="tech">Технические вопросы</option>
+                  <option class="ask-form__select-option" value="billing">Оплата</option>
+                  <option class="ask-form__select-option" value="other">Другое</option>
+                </select>
+              </div>
+            </div>
+            <div class="ask-form__item-group">
+              <label class="ask-form__label" for="topic">Тема</label>
+              <input class="ask-form__input ask-form__input--active" type="text" name="topic" id="topic" value="домен"
+                required>
+            </div>
+            <div class="ask-form__item-group">
+              <span class="ask-form__title">Ваш вопрос</span>
+              <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
+                cols="50"></textarea>
+            </div>
+            <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
+            </button>
+            <button class="ask-form__button-send button" type="submit">Создать обращение
+            </button>
+          </form>
+        </div>
+        <div class="t-col t-col_4 help-desk__sidebar help-desk__sidebar--right">
+          <h3 class="help-desk__header h3">Статьи для вас</h3>
+          <ul class="help-desk__articles articles">
+            <li class="articles__item">
+              <a class="articles__link" href="#">Как подключить <strong>домен</strong></a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#"><strong>Домен</strong> не работает</a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Сайт не открывается</a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Как подключить почту для <strong>домен</strong>а</a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Как настроить протокол HTTPS</a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Как подтвердить право на <strong>домен</strong></a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Бесплатный суб<strong>домен</strong> на tilda.ws</a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Как купить <strong>домен</strong></a>
+            </li>
+            <li class="articles__item">
+              <a class="articles__link" href="#">Как получить <strong>домен</strong> в подарок</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

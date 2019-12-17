@@ -1,0 +1,141 @@
+.reply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+// .reply-form__topic-wrapper {
+//   position: relative;
+// }
+
+// .reply-form__articles {
+//   position: absolute;
+//   z-index: 1;
+//   width: 100%;
+//   top: 90px;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.reply-form__button-attach {
+  margin-bottom: 10px;
+}
+
+.reply-form__item-group {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-form__label,
+.reply-form__title {
+  margin-bottom: 15px;
+  font-size: 14px;
+	line-height: 10px;
+	color: #000;
+	text-transform: uppercase;
+	cursor: default;
+	letter-spacing: 1px;
+
+  &--filled {
+    background-color: #1f1d1d;
+  }
+}
+
+.reply-form__input,
+.reply-form__question,
+.reply-form__select {
+  font-family: inherit;
+  padding: 0 20px;
+  width: 100%; 
+  height: 50px; 
+  color:#000000; 
+	border: 1px solid rgba(0,0,0,0.2); 
+  font-size: 16px;
+  line-height: 1.33;
+  outline: none;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  background-color: #ffffff;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  // &:hover {
+  //   border: 1px solid $accent-color;
+  // }
+}
+
+.reply-form__select-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    right: 20px;
+    top: calc(50% - 4px);
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 6px solid black;
+  }
+}
+
+.reply-form__select {
+  padding-right: 40px;
+  display: block;
+  appearance: none;
+
+  &:valid:focus {
+  }
+}
+
+.reply-form__question::placeholder,
+.reply-form__input::placeholder {
+  font-family: inherit;
+  color: darkgray;
+}
+
+.reply-form__input {
+  // transition: all 0.15s ease-in-out;
+
+  // &:valid {
+  //   border: 1px solid green;
+  // }
+
+  // &:valid + .reply-form__label {
+  //   bottom: 40px;
+  //   background-color: #1f1d1d;
+  // }
+
+  // &--invalid {
+  //   border-color: #d26f13;
+  // }
+
+  // &:focus.reply-form__input--invalid {
+  //   border-color: #d26f13;
+  // }
+
+  &--active {
+    border-color: $accent-color;
+  }
+}
+
+.reply-form__question {
+  padding-top: 16px;
+  min-height: 150px;
+  resize: none;
+}
+
+.reply-form__button-wrapper {
+
+}
+
+.reply-form__button-link {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: inline-block;
+}

@@ -1,0 +1,47 @@
+.bubble {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: #F1F9FF;
+  border: 1px solid #B1DEFF;
+
+  &--author {
+    border: 1px solid #ECECEC;
+    // background-color: #F9F9F9;
+    background-color: #ffffff;
+  }
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+}
+
+.bubble__date {
+  margin-left: auto;
+  font-size: 14px;
+  min-width: 140px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.bubble__title,
+.bubble__date {
+  color: #aaaaaa;
+}
+
+.bubble__message {
+  width: 100%;
+}
+
+.bubble__title {
+  padding-left: 20px;
+  border-left: 1px solid #ECECEC;
+}
+
+.bubble__name {
+  margin-right: 20px;
+  font-weight: 700;
+}

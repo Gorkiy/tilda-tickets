@@ -1,0 +1,147 @@
+.tc-help {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.tc-help--show {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.tc-help__body {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);	
+}
+
+.tc-help__header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  min-height: 160px;
+  color: #ffffff;
+  background-color: #f26344;
+  
+  &--full {
+    height: 100%;
+    text-align: center;
+  }
+}
+
+.tc-help__title {
+  margin: 0;
+  width: 100%;
+  padding-right: 40px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.23;
+
+  &--full {
+    padding-right: initial;
+    margin-bottom: 10px;
+  }
+}
+
+.tc-help__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  opacity: 0.8;
+  margin: 0;
+  width: 100%;
+}
+
+.tc-help__close-button {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  opacity: 0.85;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.tc-help__button {
+  margin: 20px auto;
+}
+
+.tc-help__ask-form {
+  margin-top: 20px;
+}
+
+.tc-help__header-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tc-help {
+    top: 10px;
+    right: 10px;
+    left: initial;
+    max-width: 420px;
+    height: calc(100vh - 20px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+
+    &--complete {
+      height: auto;
+      // top: 50%;
+      // transform: translateY(-50%);
+    }
+  }
+
+  .tc-help__body {
+    border-radius: 4px;
+  }
+
+  .tc-help__header {
+    min-height: 200px;
+
+    &--full {
+      min-height: 500px;
+    }
+  }
+}

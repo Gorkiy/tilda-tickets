@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Relevant articles</title>
+  </head>
+  <body>
+    <div class="tc-help">
+      <div class="tc-help__body">
+        <div class="tc-help__header">
+          <button class="tc-help__close-button" type="button">
+            <span class="visually-hidden">close the window</span>
+          </button>
+          <h2 class="tc-help__title">Get help 👋</h2>
+          <p class="tc-help__subtitle">The team typically replies in a day.</p>
+        </div>
+        <form class="tc-help__ask-form ask-form" method="post" action="https://tilda.cc">
+          <div class="ask-form__item-group">
+            <label class="ask-form__label" for="category">Department</label>
+            <div class="ask-form__select-wrapper">
+              <select class="ask-form__select" name="category" id="category" required>
+                <option class="ask-form__select-option" value="tech">Customer care</option>
+                <option class="ask-form__select-option" value="billing">Billing</option>
+                <option class="ask-form__select-option" value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="ask-form__topic-wrapper">
+            <div class="ask-form__item-group">
+              <label class="ask-form__label" for="topic">Topic</label>
+              <input class="ask-form__input ask-form__input--active" type="text" name="topic" id="topic"
+                placeholder="Type in your topic" value="домен" required>
+            </div>
+            <div class="ask-form__articles articles">
+              <div class="articles__title-wrapper">
+                <h3 class="articles__title">✋ It might help</h3>
+                <button class="articles__close-button" type="button">
+                  <span class="visually-hidden">close the window</span>
+                </button>
+              </div>
+              <ul class="articles__list">
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Как подключить <strong>домен</strong></a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#"><strong>Домен</strong> не работает</a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Сайт не открывается</a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Как подключить почту для <strong>домен</strong>а</a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Как настроить протокол HTTPS</a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Как подтвердить право на <strong>домен</strong></a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Бесплатный суб<strong>домен</strong> на tilda.ws</a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Как купить <strong>домен</strong></a>
+                </li>
+                <li class="articles__item">
+                  <a class="articles__link" href="#">Как получить <strong>домен</strong> в подарок</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ask-form__item-group">
+            <span class="ask-form__title">Your question</span>
+            <textarea class="ask-form__question" id="question" rows="5" placeholder="Start typing ..."
+              cols="50"></textarea>
+          </div>
+          <button class="ask-form__button-attach button button--attach" type="button">Attach or drop a file
+          </button>
+          <button class="ask-form__button-send button button--brown" type="submit">Send
+          </button>
+        </form>
+      </div>
+      <script src="js/script.js"></script>
+  </body>
+</html>

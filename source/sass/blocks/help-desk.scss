@@ -1,0 +1,215 @@
+.help-desk__search-box {
+  padding: 50px 0;
+  background-color: #f0f0f0;
+}
+
+.help-desk__search {
+  margin-top: 20px;
+  font-family: inherit;
+  padding: 0 20px;
+  width: 100%; 
+  height: 50px; 
+  color:#000000; 
+	border: 1px solid rgba(0,0,0,0.2); 
+  font-size: 16px;
+  line-height: 1.33;
+  outline: none;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  background-color: #ffffff;
+
+	border-color: $accent-color;
+	box-shadow: 0 1.5px 5px rgba(0,0,0,.25), 0 1.5px 5px rgba(0,0,0,.10);
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &::placeholder {
+    font-family: inherit;
+    color: darkgray;
+  }
+
+  &--active {
+    border-color: $accent-color;
+  }
+  // &:hover {
+  //   border: 1px solid $accent-color;
+  // }
+}
+
+.help-desk__body {
+  margin-top: 40px;
+  display: flex;
+}
+
+.help-desk__content {
+  padding-left: 40px;
+  // flex-grow: 1;
+  // width: auto;
+  border-left: 1px solid #ECECEC;
+
+  &--left {
+    padding-left: 0;
+    border-left: none;
+    padding-right: 40px;
+    // border-right: 1px solid #ECECEC;
+  }
+}
+
+.help-desk__sidebar {
+  &--right {
+    padding-left: 40px;
+    border-left: 1px solid #ECECEC;
+  }
+}
+
+.help-desk__header {
+  margin-bottom: -10px;
+}
+
+.help-desk__back-link {
+  font-size: 16px;
+  color: $accent-color;
+}
+
+.help-desk__text {
+  font-size: 18px;
+}
+
+.help-desk__button-new {
+  margin-top: 10px;
+  padding: 14px 40px;
+  display: inline-block;
+}
+
+.help-desk__ask-form {
+  margin-top: 40px;
+  // max-width: 80%;
+}
+
+.help-desk__articles {
+  margin-top: 20px;
+}
+
+.help-desk__nav {
+  position: relative;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
+}
+
+.help-desk__button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+// .help-desk__button-add {
+//   position: absolute;
+//   top: 17px;
+//   right: 20px;
+//   display: block;
+//   width: 36px;
+//   height: 36px;
+//   background-color: $accent-color;
+//   border-radius: 3px;
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 17px;
+//     left: 8px;
+//     width: 20px;
+//     height: 1px;
+//     background-color: #ffffff;
+//   }
+
+//   &::after {
+//     transform: rotate(-90deg);
+//   }
+// }
+
+.help-desk__button-add {
+  position: relative;
+  height: 36px;
+  display: inline-block;
+  background-color: $accent-color;
+  border-radius: 3px;
+  padding: 7px 30px;
+  display: inline-block;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    width: 12px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
+}
+
+.help-desk__menu {
+  @include list-reset();
+  margin-top: 20px;
+}
+
+.help-desk__menu-item {
+  // padding: 5px 0;
+}
+
+.help-desk__menu-link {
+  font-size: 16px;
+  // text-transform: uppercase;
+  color: #333;
+  font-weight: 400;
+  padding: 20px;
+  display: block;
+
+  &--active {
+    background-color: #F5F5F5;
+    font-weight: 700;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &--active:hover {
+    color: inherit;
+  }
+}
+
+.help-desk__ticket-info {
+  margin-top: 10px;
+}
+
+.help-desk__info-row {
+  padding: 10px 0;
+  // margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    // margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.help-desk__info-item {
+  font-size: 16px;
+
+  &--title {
+    color: #aaaaaa;
+  }
+}
+
+.help-desk__info-weight {
+  color: #aaaaaa;
+  font-size: 14px;
+}

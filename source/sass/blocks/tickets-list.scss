@@ -1,0 +1,129 @@
+.tickets-list {
+  position: relative;
+  padding: 20px 20px 0 20px;
+  background: #ffffff;
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  border-top: transparent;
+}
+
+.tickets-list__items {
+  @include list-reset();
+}
+
+.tickets-list__item {
+  margin-bottom: 0;
+  background-color: #ffffff;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.tickets-list__head,
+.tickets-list__item {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.tickets-list__head {
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // padding: 20px;
+  border-bottom: 1px solid transparent;
+  background-color: #F1F9FF;
+  color: #000000;
+}
+
+.tickets-list__col {
+  min-width: unset;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+
+  &--id {
+    min-width: 100px;
+    order: 1;
+    color: #aaaaaa;
+  }
+
+  &--conversation {
+    flex-grow: 1;
+    order: 2;
+    padding-right: 20px;
+    padding-top: 0;
+  }
+
+  &--status {
+    min-width: 130px;
+    flex-grow: 0;
+    order: 3;
+  }
+
+  &--date {
+    min-width: 120px;
+    order: 4;
+    width: auto;
+    color: #aaaaaa;
+  }
+
+  &--head {
+    color: #000000;
+  }
+}
+
+.tickets-list__conversation {
+  margin: 0;
+  position: relative;
+  display: flex;
+
+  &--new {
+    font-weight: 700;
+  }
+
+  &--new::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -12px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #329DFF;
+  }
+}
+
+.tickets-list__replies-count {
+  margin-left: auto;
+  padding: 3px 8px;
+  display: inline-block;
+  max-height: 24px;
+  background-color: #F1F9FF;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 2px;
+  border: 1px solid #ECECEC;
+}
+
+.tickets-list__subject {
+  color: #000000;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.tickets-list__status {
+  &--ready {
+    color: #08AFF0;
+  }
+  
+  &--waiting {
+    color: #F0B508;
+  }
+}

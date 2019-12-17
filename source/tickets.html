@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>My tickets</title>
+  </head>
+  <body>
+    <main class="help-desk">
+      <div class="help-desk__search-box">
+        <div class="t-container">
+          <div class="t-col t-col_12">
+            <h3 class="h3">Есть вопрос?</h3>
+            <input type="text" class="help-desk__search" value="" placeholder="Поиск по частым вопросам"
+              data-attr-lang="RU">
+          </div>
+        </div>
+      </div>
+      <div class="t-container">
+
+        <div class="t-col t-col_12 tickets tickets--short tickets--shown">
+          <div class="tickets__head">
+            <h3 class="h3 tickets__head-item tickets__head-item--active">Мои заявки</h3>
+          </div>
+          <ul class="tickets__sort tickets__sort--collapsed">
+            <li class="tickets__sort-item tickets__sort-item--collapsed">
+              <a class="tickets__sort-link tickets__sort-link--disabled">Открытые (2)</a>
+            </li>
+            <li class="tickets__sort-item tickets__sort-item--collapsed">
+              <a class="tickets__sort-link tickets__sort-link--disabled" href="#">Закрытые (4)</a>
+            </li>
+            <li class="tickets__sort-item tickets__sort-item--collapsed tickets__sort-item--expand">
+              <a class="tickets__sort-link tickets__sort-link--expand" href="#">Развернуть</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="t-col t-col_12 tickets tickets--full">
+          <div class="tickets__head">
+            <h3 class="h3 tickets__head-item tickets__head-item--active">Мои заявки</h3>
+            <a class="help-desk__button-add button tickets__head-button" href="#">Новая заявка</a>
+          </div>
+          <ul class="tickets__sort">
+            <li class="tickets__sort-item tickets__sort-item--active">
+              <a class="tickets__sort-link tickets__sort-link--active">Открытые (9)</a>
+            </li>
+            <li class="tickets__sort-item">
+              <a class="tickets__sort-link" href="#">Закрытые (4)</a>
+            </li>
+          </ul>
+          <div class="tickets__tickets-list tickets-list">
+            <div class="tickets-list__head">
+              <span class="tickets-list__col tickets-list__col--head tickets-list__col--id">Номер</span>
+              <span class="tickets-list__col tickets-list__col--head tickets-list__col--conversation">Тема</span>
+              <span class="tickets-list__col tickets-list__col--head tickets-list__col--status">Статус</span>
+              <span class="tickets-list__col tickets-list__col--head tickets-list__col--date">Дата
+                создания</span>
+            </div>
+            <ul class="tickets-list__items">
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524623
+                </div>
+                <div
+                  class="tickets-list__conversation tickets-list__conversation--new tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="conversation.html">Можно ли указать резервный сервер, если
+                    связь с основным потеряна?</a>
+                  <span class="tickets-list__replies-count">4</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--ready">Готово</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">03.12.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524619
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Проблема с оплатой</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">01.12.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524617
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Сайт не работает</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">01.12.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524615
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Не могу разобраться с zero block</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">01.12.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524613
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Упал сайт, все плохо</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">28.11.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524611
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Помогите подобрать Тильда-эксперта для моего проекта</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">28.11.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524609
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Картинки не загружаются</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">25.11.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524607
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Как уменьшить размер сайта для мобилок?</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">24.11.2019</span>
+                </div>
+              </li>
+              <li class="tickets-list__item">
+                <div class="tickets-list__col tickets-list__col--id">#524605
+                </div>
+                <div class="tickets-list__conversation tickets-list__col tickets-list__col--conversation">
+                  <a class="tickets-list__subject" href="#">Двойное снятие оплаты за текущий месяц</a>
+                </div>
+                <div class="tickets-list__col tickets-list__col--status">
+                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                </div>
+                <div class="tickets-list__col tickets-list__col--date">
+                  <span class="tickets-list__date">24.11.2019</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-container help-desk__body tickets__ask-support">
+          <div class="t-col t-col_4 help-desk__sidebar">
+            <h3 class="help-desk__header h3">Нужна помощь?</h3>
+            <p class="help-desk__text">Ответы на большинство вопросов подробно описаны в нашем <a class="link"
+                href="#">справочном центре</a> и <a class="link" href="#">частых
+                вопросах</a>.
+            </p>
+            <p class="help-desk__text">Если ничего не помогло, обратитесь в поддержку. Переписка по обращению будет
+              доступна в личном
+              кабинете, ответы также придут вам на email.
+            </p>
+          </div>
+          <div class="t-col t-col_8 help-desk__content">
+            <h3 class="help-desk__header h3">Напишите в поддержку</h3>
+            <p class="help-desk__text">Сформулируйте ваш вопрос как можно более подробно. Укажите ссылку на
+              опубликованную
+              страницу с проблемой — так мы сможем помочь вам быстрее.</p>
+            <h4 class="help-desk__header h4">Режим работы</h4>
+            <p class="help-desk__text">
+              — Среднее время ответа в рабочие часы (понедельник – пятница, с 10:00 до 18:00) — 2 часа<br>
+              — При высокой загрузке время ответа может быть увеличено <br>
+              — В выходные дни мы отвечаем в течение суток
+            </p>
+            <a class="help-desk__button-new button">Новое обращение</a>
+          </div>
+        </div>
+      </div>
+      <include src="build/components/modals.html"></include>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
