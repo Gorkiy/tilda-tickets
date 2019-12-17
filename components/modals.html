@@ -1,0 +1,34 @@
+<div class="modal">
+  <div class="modal__content">
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <!-- <a class="help-desk__back-link" href="#">← Назад</a> -->
+    <h3 class="help-desk__header h3">Новое обращение</h3>
+    <form class="help-desk__ask-form ask-form" method="post" action="https://tilda.cc">
+      <div class="ask-form__item-group">
+        <label class="ask-form__label" for="category">Категория</label>
+        <div class="ask-form__select-wrapper">
+          <select class="ask-form__select" name="category" id="category" required>
+            <option class="ask-form__select-option" value="tech">Технические вопросы</option>
+            <option class="ask-form__select-option" value="billing">Оплата</option>
+            <option class="ask-form__select-option" value="other">Другое</option>
+          </select>
+        </div>
+      </div>
+      <div class="ask-form__item-group">
+        <label class="ask-form__label" for="topic">Тема</label>
+        <input class="ask-form__input" type="text" name="topic" id="topic" placeholder="Укажите тему" required>
+      </div>
+      <div class="ask-form__item-group">
+        <span class="ask-form__title">Ваш вопрос</span>
+        <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
+          cols="50"></textarea>
+      </div>
+      <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
+      </button>
+      <button class="ask-form__button-send button" type="submit">Создать обращение
+      </button>
+    </form>
+  </div>
+</div>
