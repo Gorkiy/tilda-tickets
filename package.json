@@ -2,6 +2,7 @@
   "name": "ticket-system",
   "version": "1.0.0",
   "description": "Tilda Ticket System: Beta",
+  "homepage": "https://gorkiy.github.io/tilda-tickets",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.7.2",
