@@ -33,9 +33,13 @@ var ticketsCollapsed = document.querySelector('.tickets--short');
 var newTicketHeadButton = document.querySelector('.tickets__head-button');
 
 ticketsCollapsed.addEventListener('click', function (evt) {
-  ticketsCollapsed.classList.toggle('tickets--shown');
-  tickets.classList.toggle('tickets--shown');
-  askSupportBlock.classList.toggle('visually-hidden');
+  var list = evt.target.closest('.tickets__sort--collapsed');
+
+  if (list) {
+    ticketsCollapsed.classList.toggle('tickets--shown');
+    tickets.classList.toggle('tickets--shown');
+    askSupportBlock.classList.toggle('visually-hidden');
+  }
 });
 
 newTicketHeadButton.addEventListener('click', function () {
