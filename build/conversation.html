@@ -20,27 +20,44 @@
         </div>
       </div> -->
       <div class="t-container help-desk__body">
-        <div class="t-col t-col_8 help-desk__ticket ticket">
+        <div class="t-col t-col_12 help-desk__ticket ticket">
           <div class="ticket__head">
             <div class="ticket__head-nav">
-              <a class="ticket__back-link" href="tickets-opened.html">← К списку заявок</a>
+              <a class="ticket__back-link" href="tickets.html">← К списку заявок</a>
               <span class="ticket__status visually-hidden">Открыта</span>
             </div>
-            <h3 class="ticket__header h3">Можно ли указать резервный сервер, если связь с основным потеряна?</h3>
+            <div class="ticket__title-wrap">
+              <h3 class="ticket__header h3">Можно ли указать резервный сервер, если связь с основным потеряна?</h3>
+              <a class="ticket__button button" href="#">Закрыть заявку</a>
+            </div>
+            <div class="ticket__info">
+              <span class="ticket__info-item ticket__info-id">Номер заявки: 524623</span>
+              <span class="ticket__info-item ticket__info-status">Статус: Открыта</span>
+              <div class="ticket__info-item ticket__info-notifications">
+                <span>Уведомления: evgeniy@gmail.com</span>
+                <a class="link" href="#">Добавить адресата</a>
+              </div>
+            </div>
           </div>
           <div class="ticket__conversation">
             <div class="ticket__bubble bubble bubble--author">
               <span class="bubble__name">Петр Яковлев</span>
-              <span class="bubble__title">Клиент</span>
-              <span class="bubble__date">28.11.2019, 14:12</span>
+              <!-- <span class="bubble__title">Клиент</span> -->
+              <span class="bubble__date">14:12</span>
               <p class="bubble__message">Здравствуйте.<br><br> Заявка на рекламную кампанию уже больше 24 часов на
                 рассмотрении. Рекомендованных ответов: 3
                 Больше 24 часов на рассмотрении.</p>
+              <div class="bubble__attachment">
+                <a href="#" class="link">Screenshot 2019-11-2...</a>
+                <span class="help-desk__info-weight">(45 Кб)</span>
+              </div>
             </div>
+            <span class="ticket__date">29 ноября, 2019</span>
             <div class="ticket__bubble bubble">
-              <span class="bubble__name">Марина Ивлеева</span>
-              <span class="bubble__title">Менеджер по рекламе</span>
-              <span class="bubble__date">28.11.2019, 15:33</span>
+              <div class="bubble__avatar"></div>
+              <span class="bubble__name">Евгений Демидов</span>
+              <!-- <span class="bubble__title">Менеджер по рекламе</span> -->
+              <span class="bubble__date">15:33</span>
               <p class="bubble__message">Здравствуйте!<br><br>
                 В большинстве случаев проверка занимает не более одного рабочего дня, но иногда на это может
                 потребоваться больше времени.<br>
@@ -49,33 +66,24 @@
             </div>
           </div>
           <div class="ticket__reply">
-            <div class="reply-form__button-wrapper">
-              <a class="reply-form__button-link button" href="conversation-reply.html">Написать ответ
-              </a>
-            </div>
-          </div>
-          <!-- <div class="ticket__reply">
             <h3 class="help-desk__header h3">Написать ответ</h3>
             <form class="ticket__reply-form reply-form" method="post" action="https://tilda.cc">
               <div class="reply-form__item-group">
-                <textarea class="reply-form__question" id="question" rows="5" placeholder="Ваше сообщение..."
-                  cols="50"></textarea>
+                <textarea class="reply-form__question" id="question" rows="5" placeholder="Ваше сообщение..." cols="50"></textarea>
               </div>
               <div class="reply-form__button-wrapper">
+                <button class="reply-form__button-send button button--attach" type="button">Добавить файл
+                </button>
                 <button class="reply-form__button-send button" type="submit">Отправить
                 </button>
               </div>
             </form>
-          </div> -->
+          </div>
         </div>
-        <div class="t-col t-col_4">
+        <!-- <div class="t-col t-col_4">
           <div class="help-desk__sidebar help-desk__nav">
             <h3 class="help-desk__header h3">Заявка №524623</h3>
             <div class="help-desk__ticket-info">
-              <!-- <div class="help-desk__info-row">
-              <span class="help-desk__info-item">ID</span>
-              <span class="help-desk__info-item">№524623</span>
-            </div> -->
               <div class="help-desk__info-row">
                 <span class="help-desk__info-item help-desk__info-item--title">Дата создания</span>
                 <span class="help-desk__info-item">28.11.2019, 14:12</span>
@@ -98,7 +106,7 @@
               <button class="help-desk__button button" type="button">Закрыть заявку</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
     <script src="js/script.js"></script>

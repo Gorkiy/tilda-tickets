@@ -4,18 +4,15 @@
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 90%;
-  background-color: #F1F9FF;
-  border: 1px solid #B1DEFF;
+  background-color: #ffffff;
+  border: 1px solid #ECECEC;
 
   &--author {
-    border: 1px solid #ECECEC;
-    // background-color: #F9F9F9;
-    background-color: #ffffff;
-  }
-
-  &:nth-child(2n) {
     margin-left: auto;
+    background-color: #F1F9FF;
+    border: 1px solid #B1DEFF;
   }
 }
 
@@ -44,4 +41,30 @@
 .bubble__name {
   margin-right: 20px;
   font-weight: 700;
+}
+
+.bubble__attachment {
+  padding-left: 18px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background-image: url("/img/attach.svg");
+  }
+}
+
+.bubble__avatar {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid red;
+  background-image: url("/img/murrey.png");
+  background-size: cover;
+  border: 1px solid #ECECEC;
 }

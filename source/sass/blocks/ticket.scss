@@ -1,3 +1,7 @@
+.ticket {
+  
+}
+
 .ticket__head {
   border-bottom: 1px solid #ECECEC;
 }
@@ -8,7 +12,24 @@
   font-size: 16px;
 }
 
+.ticket__title-wrap {
+  display: flex;
+  // border: 1px solid red;
+}
+
+.ticket__button {
+  margin-left: auto;
+  margin-top: 5px;
+  height: 36px;
+  display: inline-block;
+  background-color: $accent-color;
+  border-radius: 3px;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
 .ticket__header {
+  margin-right: 20px;
   padding: 5px 0 10px 0;
 }
 
@@ -35,4 +56,46 @@
 
 .ticket__reply-form {
   margin: 20px 0;
+}
+
+.ticket__date {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ticket__info {
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+.ticket__info-item { 
+  position: relative;
+  padding: 0 30px;
+  // border-left: 1px solid #ECECEC;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 20px;
+    width: 0;
+    border-left: 1px solid #ECECEC;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:first-child::before {
+    display: none;
+  }
+}
+
+.ticket__info-notifications {
+  display: flex;
+  flex-direction: column;
 }

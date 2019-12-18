@@ -30,7 +30,7 @@
 
 .ask-form__label,
 .ask-form__title {
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   font-size: 14px;
 	line-height: 10px;
 	color: #000;
@@ -43,9 +43,15 @@
   }
 }
 
+.ask-form__text {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
 .ask-form__input,
 .ask-form__question,
 .ask-form__select {
+  margin-top: 15px;
   font-family: inherit;
   padding: 0 20px;
   width: 100%; 
@@ -76,7 +82,7 @@
     content: "";
     display: block;
     right: 20px;
-    top: calc(50% - 4px);
+    top: calc(50% + 4px);
     width: 0;
     height: 0;
     border-right: 4px solid transparent;
@@ -126,59 +132,8 @@
 }
 
 .ask-form__question {
+  // margin-top: 0;
   padding-top: 16px;
   min-height: 150px;
   resize: none;
 }
-
-// .ask-form__check-row {
-//   padding-left: 24px;
-//   position: relative;
-// }
-
-// .ask-form__checkbox-label {
-//   font-size: 14px;
-
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     left: 0;
-//     // top: 3px;
-//     width: 16px;
-//     height: 16px;
-//     background-color: #f2890f;
-//     border-radius: 4px;
-//     opacity: 0.5;
-//     cursor: pointer;
-//   }
-
-//   &::after {
-//     display: none;
-//     position: absolute;
-//     content: "";
-//     left: 6px;
-//     top: 2px;
-//     width: 5px;
-//     height: 10px;
-//     border: solid white;
-//     border-width: 0 2px 2px 0;
-//     transform: rotate(35deg);
-//   }
-// }
-
-// .ask-form__checkbox:checked ~ .ask-form__checkbox-label::after {
-//   display: block;
-// }
-
-// .ask-form__checkbox:checked ~ .ask-form__checkbox-label::before {
-//   opacity: 1;
-// }
-
-// .ask-form__check-link {
-//   text-decoration: underline;
-//   color: $main-color;
-
-//   &:hover {
-//     color: $accent-color;
-//   }
-// }

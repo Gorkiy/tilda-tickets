@@ -20,7 +20,7 @@
       </div>
       <div class="t-container">
 
-        <div class="t-col t-col_12 tickets tickets--short tickets--shown">
+        <!-- <div class="t-col t-col_12 tickets">
           <div class="tickets__head">
             <h3 class="h3 tickets__head-item tickets__head-item--active">Мои заявки</h3>
           </div>
@@ -35,13 +35,14 @@
               <a class="tickets__sort-link tickets__sort-link--expand" href="#">Развернуть</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
 
         <div class="t-col t-col_12 tickets tickets--full">
           <div class="tickets__head">
             <h3 class="h3 tickets__head-item tickets__head-item--active">Мои заявки</h3>
-            <a class="help-desk__button-add button tickets__head-button" href="#">Новая заявка</a>
+            <a class="help-desk__button-add button tickets__head-button" href="new-ticket-relevant.html">Новая
+              заявка</a>
           </div>
           <ul class="tickets__sort">
             <li class="tickets__sort-item tickets__sort-item--active">
@@ -49,6 +50,8 @@
             </li>
             <li class="tickets__sort-item">
               <a class="tickets__sort-link" href="#">Закрытые (4)</a>
+            </li>
+            <li class="tickets__sort-item tickets__sort-item--last">
             </li>
           </ul>
           <div class="tickets__tickets-list tickets-list">
@@ -69,7 +72,7 @@
                   <span class="tickets-list__replies-count">4</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--ready">Готово</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">03.12.2019</span>
@@ -82,7 +85,7 @@
                   <a class="tickets-list__subject" href="#">Проблема с оплатой</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">01.12.2019</span>
@@ -95,7 +98,7 @@
                   <a class="tickets-list__subject" href="#">Сайт не работает</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">01.12.2019</span>
@@ -108,7 +111,7 @@
                   <a class="tickets-list__subject" href="#">Не могу разобраться с zero block</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">01.12.2019</span>
@@ -121,7 +124,7 @@
                   <a class="tickets-list__subject" href="#">Упал сайт, все плохо</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">28.11.2019</span>
@@ -134,7 +137,7 @@
                   <a class="tickets-list__subject" href="#">Помогите подобрать Тильда-эксперта для моего проекта</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">28.11.2019</span>
@@ -147,7 +150,7 @@
                   <a class="tickets-list__subject" href="#">Картинки не загружаются</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">25.11.2019</span>
@@ -160,7 +163,7 @@
                   <a class="tickets-list__subject" href="#">Как уменьшить размер сайта для мобилок?</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">24.11.2019</span>
@@ -173,7 +176,7 @@
                   <a class="tickets-list__subject" href="#">Двойное снятие оплаты за текущий месяц</a>
                 </div>
                 <div class="tickets-list__col tickets-list__col--status">
-                  <span class="tickets-list__status tickets-list__status--waiting">В работе</span>
+                  <span class="tickets-list__status">В работе</span>
                 </div>
                 <div class="tickets-list__col tickets-list__col--date">
                   <span class="tickets-list__date">24.11.2019</span>
@@ -184,28 +187,25 @@
         </div>
 
         <div class="t-container help-desk__body tickets__ask-support">
-          <div class="t-col t-col_4 help-desk__sidebar">
-            <h3 class="help-desk__header h3">Нужна помощь?</h3>
-            <p class="help-desk__text">Ответы на большинство вопросов подробно описаны в нашем <a class="link" href="#">справочном центре</a> и <a class="link" href="#">частых
-                вопросах</a>.
-            </p>
-            <p class="help-desk__text">Если ничего не помогло, обратитесь в поддержку. Переписка по обращению будет
-              доступна в личном
-              кабинете, ответы также придут вам на email.
-            </p>
-          </div>
           <div class="t-col t-col_8 help-desk__content">
             <h3 class="help-desk__header h3">Напишите в поддержку</h3>
-            <p class="help-desk__text">Сформулируйте ваш вопрос как можно более подробно. Укажите ссылку на
+            <!-- <p class="help-desk__text">Сформулируйте ваш вопрос как можно более подробно. Укажите ссылку на
               опубликованную
-              страницу с проблемой — так мы сможем помочь вам быстрее.</p>
-            <h4 class="help-desk__header h4">Режим работы</h4>
+              страницу с проблемой — так мы сможем помочь вам быстрее.</p> -->
+            <!-- <h4 class="help-desk__header h4">Режим работы</h4> -->
             <p class="help-desk__text">
               — Среднее время ответа в рабочие часы (понедельник – пятница, с 10:00 до 18:00) — 2 часа<br>
               — При высокой загрузке время ответа может быть увеличено <br>
               — В выходные дни мы отвечаем в течение суток
             </p>
-            <a class="help-desk__button-new button">Новое обращение</a>
+            <a class="help-desk__button-new button" href="new-ticket-relevant.html">Новое обращение</a>
+          </div>
+          <div class="t-col t-col_4 help-desk__sidebar">
+            <h3 class="help-desk__header h3">Справка</h3>
+            <p class="help-desk__text">Ответы на большинство вопросов подробно описаны в нашем <a class="link" href="#">справочном центре</a> и <a class="link" href="#">частых
+                вопросах</a>.
+            </p>
+            <a class="help-desk__button-new button">Справочный центр</a>
           </div>
         </div>
       </div>

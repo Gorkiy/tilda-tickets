@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="help-desk">
-      <div class="help-desk__search-box">
+      <!-- <div class="help-desk__search-box">
         <div class="t-container">
           <div class="t-col t-col_12">
             <h3 class="h3">Есть вопрос?</h3>
@@ -18,7 +18,7 @@
               data-attr-lang="RU">
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="t-container help-desk__body">
         <div class="t-col t-col_8 help-desk__content help-desk__content--left">
           <a class="help-desk__back-link" href="#">← Назад</a>
@@ -41,9 +41,18 @@
             </div>
             <div class="ask-form__item-group">
               <span class="ask-form__title">Ваш вопрос</span>
+              <p class="ask-form__text">Сформулируйте ваш вопрос как можно более подробно. Укажите ссылку на
+                опубликованную страницу с
+                проблемой — так мы сможем помочь вам быстрее.</p>
               <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
                 cols="50"></textarea>
             </div>
+            <div class="ask-form__item-group">
+              <span class="ask-form__title">Уведомления об ответах</span>
+              <span class="ask-form__text">evgeniy@gmail.com</span>
+              <a class="link" href="#">Добавить адресата</a>
+            </div>
+
             <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
             </button>
             <button class="ask-form__button-send button" type="submit">Создать обращение
