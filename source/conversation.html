@@ -24,25 +24,62 @@
           <div class="ticket__head">
             <div class="ticket__head-nav">
               <a class="ticket__back-link" href="tickets.html">← К списку заявок</a>
+              <!-- <a class="ticket__back-link" href="#">✔︎ Закрыть заявку</a> -->
               <span class="ticket__status visually-hidden">Открыта</span>
             </div>
             <div class="ticket__title-wrap">
               <h3 class="ticket__header h3">Можно ли указать резервный сервер, если связь с основным потеряна?</h3>
-              <a class="ticket__button button" href="#">Закрыть заявку</a>
+              <!-- <a class="ticket__button button" href="#">Закрыть заявку</a> -->
+              <a class="ticket__close-link button button--secondary" href="#">✔︎ Закрыть заявку</a>
+
             </div>
             <div class="ticket__info">
               <span class="ticket__info-item ticket__info-id">Номер заявки: 524623</span>
               <span class="ticket__info-item ticket__info-status">Статус: Открыта</span>
               <div class="ticket__info-item ticket__info-notifications">
-                <span>Уведомления: evgeniy@gmail.com</span>
-                <a class="link" href="#">Добавить адресата</a>
+                <span>Уведомления: evgeniy@gmail.com и 2 др.</span>
+                <a class="ticket__info-add-notify link" href="#">Настроить</a>
+
+                <div class="ticket__notifications visually-hidden">
+                  <button class="ticket__notifications-close" type="button">
+                    <span class="visually-hidden">Закрыть окно</span>
+                  </button>
+                  <div class="ask-form__item-group">
+                    <label class="ask-form__label" for="address">Добавьте адресата</label>
+                    <!-- <span class="ask-form__title">Добавьте адресата</span> -->
+                    <div class="ticket__item-group">
+                      <input class="ticket__input ask-form__input" type="text" name=" address" id="topic"
+                        placeholder="Укажите email" required>
+                      <button class="button ticket__notifications-button" type="button">✔︎</button>
+                    </div>
+                  </div>
+
+                  <div class="ask-form__item-group">
+                    <span class="ask-form__title">Уведомления получают:</span>
+                  </div>
+                  <ul class="ticket__address-list">
+                    <li class="ticket__address-item ticket__address-item--main">evgeniy@gmail.com</li>
+                    <li class="ticket__address-item ticket__address-item--secondary">vasiliy@gmail.com
+                      <span class="ticket__close"></span>
+                    </li>
+                    <li class="ticket__address-item ticket__address-item--secondary">masha@gmail.com
+                      <span class="ticket__close"></span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- <div class="ask-form__item-group">
+                  <label class="ask-form__label" for="topic">Тема</label>
+                  <input class="ask-form__input ask-form__input--active" type="text" name="topic" id="topic" value="домен"
+                    required>
+                </div> -->
+
               </div>
             </div>
           </div>
           <div class="ticket__conversation">
-            <div class="ticket__bubble bubble bubble--author">
+            <!-- <div class="ticket__bubble bubble bubble--author">
               <span class="bubble__name">Петр Яковлев</span>
-              <!-- <span class="bubble__title">Клиент</span> -->
               <span class="bubble__date">14:12</span>
               <p class="bubble__message">Здравствуйте.<br><br> Заявка на рекламную кампанию уже больше 24 часов на
                 рассмотрении. Рекомендованных ответов: 3
@@ -51,30 +88,61 @@
                 <a href="#" class="link">Screenshot 2019-11-2...</a>
                 <span class="help-desk__info-weight">(45 Кб)</span>
               </div>
-            </div>
-            <span class="ticket__date">29 ноября, 2019</span>
+            </div> -->
             <div class="ticket__bubble bubble">
-              <div class="bubble__avatar"></div>
-              <span class="bubble__name">Евгений Демидов</span>
-              <!-- <span class="bubble__title">Менеджер по рекламе</span> -->
-              <span class="bubble__date">15:33</span>
-              <p class="bubble__message">Здравствуйте!<br><br>
-                В большинстве случаев проверка занимает не более одного рабочего дня, но иногда на это может
-                потребоваться больше времени.<br>
-                Если рассмотрение Вашего объявления занимает более двух рабочих дней, заполните данную форму она поможет
-                ускорить данный процесс. </p>
+              <div class="bubble__avatar">E</div>
+              <div class="bubble__message-box">
+                <div class="bubble__message-wrap">
+                  <p class="bubble__message">Здравствуйте.<br><br> Заявка на рекламную кампанию уже больше 24 часов на
+                    рассмотрении. Рекомендованных ответов: 3
+                    Больше 24 часов на рассмотрении.
+
+                    <span class="bubble__attachment">
+                      <a href="#" class="link">Screenshot 2019-11-2...</a>
+                      <span class="help-desk__info-weight">(45 Кб)</span>
+                    </span>
+
+                  </p>
+                </div>
+                <div class="bubble__message-wrap">
+                  <p class="bubble__message">Прием-прием! </p>
+                </div>
+                <div class="bubble__message-wrap">
+                  <p class="bubble__message">Это очень срочно. Когда вы сможете помочь?</p>
+                </div>
+                <span class="bubble__timestamp bubble__timestamp--tech">1 день назад</span>
+              </div>
+            </div>
+            <span class="ticket__timeline ticket__timeline--assigned">👋 <strong>Алексей Иванов</strong> будет помогать
+              вам.</span>
+            <span class="ticket__timeline ticket__timeline--date">29 ноября, 2019</span>
+            <div class="ticket__bubble bubble">
+              <div class="bubble__avatar bubble__avatar--tech"></div>
+              <div class="bubble__message-box bubble__message-box--tech">
+                <div class="bubble__message-wrap">
+                  <p class="bubble__message bubble__message--tech">Здравствуйте, Евгений!<br><br>
+                    В большинстве случаев проверка занимает не более одного рабочего дня, но иногда на это может
+                    потребоваться больше времени.
+                    Если рассмотрение Вашего объявления занимает более двух рабочих дней, заполните данную форму она
+                    поможет
+                    ускорить данный процесс. </p>
+                </div>
+                <span class="bubble__timestamp">2 часа назад</span>
+              </div>
             </div>
           </div>
           <div class="ticket__reply">
-            <h3 class="help-desk__header h3">Написать ответ</h3>
+            <h4 class="help-desk__header h4">Написать ответ</h4>
             <form class="ticket__reply-form reply-form" method="post" action="https://tilda.cc">
               <div class="reply-form__item-group">
                 <textarea class="reply-form__question" id="question" rows="5" placeholder="Ваше сообщение..."
                   cols="50"></textarea>
               </div>
+              <a class="reply-form__button-attach link" href="#">Прикрепить файл
+              </a>
               <div class="reply-form__button-wrapper">
-                <button class="reply-form__button-send button button--attach" type="button">Добавить файл
-                </button>
+                <!-- <button class="reply-form__button-send button button--attach" type="button">Добавить файл
+                </button> -->
                 <button class="reply-form__button-send button" type="submit">Отправить
                 </button>
               </div>

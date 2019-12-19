@@ -47,3 +47,29 @@
 //   ticketsCollapsed.classList.toggle('tickets--shown');
 //   tickets.classList.toggle('tickets--shown');
 // });
+
+
+
+var notifications = document.querySelector('.ticket__notifications');
+var changeEmailsButton = document.querySelector('.ticket__info-add-notify');
+
+changeEmailsButton.addEventListener('click', function () {
+  notifications.classList.remove('visually-hidden');
+});
+
+notifications.addEventListener('click', function (evt) {
+  var formBox = evt.target.closest('.ticket__notifications');
+  var closeButton = evt.target.closest('.ticket__notifications-close');
+
+  console.log(formBox);
+
+  if (!formBox || closeButton) {
+    notifications.classList.add('visually-hidden');
+  }
+});
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    notifications.classList.add('visually-hidden');
+  }
+});

@@ -1,18 +1,66 @@
 .bubble {
-  margin-top: 20px;
-  padding: 20px;
-  font-size: 16px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 90%;
-  background-color: #ffffff;
-  border: 1px solid #ECECEC;
+}
 
-  &--author {
-    margin-left: auto;
-    background-color: #F1F9FF;
-    border: 1px solid #B1DEFF;
+.bubble__message-wrap {
+  display: flex; 
+  flex-direction: column;
+}
+
+.bubble__message {
+  margin-left: auto;
+  margin-bottom: 0;
+  padding: 15px 20px;
+  display: block;
+  max-width: 90%;
+  font-size: 16px;
+  background-color: #F1F9FF;
+  border: 1px solid #B1DEFF;
+  border-radius: 3px;
+
+  &--tech {
+    margin-right: auto;
+    margin-left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ECECEC;
+  }
+}
+
+.bubble__message-box {
+  margin-left: auto;
+  order: 1;
+
+  &--tech {
+    margin-left: 0;
+    margin-right: auto;
+    order: 2;
+  }
+}
+
+.bubble__avatar {
+  margin-left: 15px;
+  margin-top: 20px;
+  padding-top: 5px;
+  order: 2;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+  border-radius: 50%;
+  background-color: #62BCFF;
+
+  &--tech {
+    margin-left: 0;
+    margin-right: 15px;
+    order: 1;
+    background-image: url("../img/murrey.png");
+    background-size: cover;
+    border: 1px solid #ECECEC;
   }
 }
 
@@ -24,13 +72,24 @@
   text-align: right;
 }
 
+.bubble__timestamp {
+  margin-right: 10px;
+  margin-top: 10px;
+  display: block;
+  color: #aaaaaa;
+
+  &--tech {
+    text-align: right;
+  }
+}
+
 .bubble__title,
 .bubble__date {
   color: #aaaaaa;
 }
 
 .bubble__message {
-  width: 100%;
+  // width: 100%;
 }
 
 .bubble__title {
@@ -44,6 +103,8 @@
 }
 
 .bubble__attachment {
+  display: inline-block;
+  margin-top: 10px;
   padding-left: 18px;
   position: relative;
 
@@ -56,15 +117,4 @@
     height: 14px;
     background-image: url("../img/attach.svg");
   }
-}
-
-.bubble__avatar {
-  margin-right: 12px;
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  border: 1px solid red;
-  background-image: url("../img/murrey.png");
-  background-size: cover;
-  border: 1px solid #ECECEC;
 }

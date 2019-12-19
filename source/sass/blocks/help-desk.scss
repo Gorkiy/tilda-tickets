@@ -88,6 +88,15 @@
   // max-width: 80%;
 }
 
+.help-desk__relevant {
+  margin-top: 180px;
+  padding: 20px;
+  // border: 1px solid #ECECEC;
+  border: 1px solid #B1DEFF;
+  // background-color: #B1DEFF;
+  border-radius: 3px;
+}
+
 .help-desk__articles {
   margin-top: 20px;
 }
@@ -130,28 +139,40 @@
 //   }
 // }
 
-.help-desk__button-add {
-  position: relative;
-  height: 36px;
-  display: inline-block;
-  background-color: $accent-color;
-  border-radius: 3px;
-  padding: 7px 30px;
-  display: inline-block;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    left: 12px;
-    width: 12px;
-    height: 1px;
-    background-color: #ffffff;
-  }
+// .help-desk__button-add {
+//   position: relative;
+//   height: 36px;
+//   display: inline-block;
+//   background-color: $accent-color;
+//   border-radius: 3px;
+//   padding: 7px 30px;
+//   display: inline-block;
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 16px;
+//     left: 12px;
+//     width: 12px;
+//     height: 1px;
+//     background-color: #ffffff;
+//   }
 
-  &::after {
-    transform: rotate(-90deg);
-  }
+//   &::after {
+//     transform: rotate(-90deg);
+//   }
+// }
+
+.help-desk__button-add {
+  // position: relative;
+  height: 44px;
+  // display: inline-block;
+  // background-color: $accent-color;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-radius: 50px;
 }
 
 .help-desk__menu {

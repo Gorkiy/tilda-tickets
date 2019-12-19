@@ -1,19 +1,10 @@
 .tickets {
-  // display: none;
   margin-top: 40px;
 
   &:last-child {
     padding-bottom: 0;
   }
 }
-
-// .tickets--shown {
-//   display: block;
-// }
-
-// .tickets2 {
-//   display: flex;
-// }
 
 .tickets__head {
   display: flex;
@@ -31,9 +22,6 @@
     opacity: 1;
   }
 }
-
-// .tickets__sort-wrap-link {
-// }
 
 .tickets__sort {
   @include list-reset();
@@ -143,4 +131,8 @@
   width: 100%;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
+}
+
+.tickets__ask-support {
+  margin-bottom: 30px;
 }

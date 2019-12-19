@@ -29,12 +29,13 @@
 }
 
 .tickets-list__head {
+  padding: 10px 0 0 0;
   // position: absolute;
   // left: 0;
   // right: 0;
   // padding: 20px;
   border-bottom: 1px solid transparent;
-  background-color: #F1F9FF;
+  // background-color: #F1F9FF;
   color: #000000;
 }
 
@@ -45,11 +46,12 @@
   font-size: 16px;
   font-weight: 400;
   text-align: left;
+  color: $grey-color;
 
   &--id {
     min-width: 100px;
     order: 1;
-    color: #aaaaaa;
+    
   }
 
   &--conversation {
@@ -63,18 +65,15 @@
     min-width: 130px;
     flex-grow: 0;
     order: 3;
-    color: #aaaaaa;
   }
 
   &--date {
     min-width: 120px;
     order: 4;
     width: auto;
-    color: #aaaaaa;
   }
 
   &--head {
-    color: #000000;
   }
 }
 

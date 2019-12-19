@@ -41,11 +41,15 @@
             </div>
             <div class="ask-form__item-group">
               <span class="ask-form__title">Ваш вопрос</span>
-              <p class="ask-form__text">Сформулируйте ваш вопрос как можно более подробно. Укажите ссылку на
+              <p class="ask-form__text">Сформулируйте ваш вопрос как можно более подробно. <br> Укажите ссылку на
                 опубликованную страницу с
                 проблемой — так мы сможем помочь вам быстрее.</p>
               <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
                 cols="50"></textarea>
+              <div class="ask-form__files">
+                <a class=" link" href="#">Прикрепить файл
+                </a>
+              </div>
             </div>
             <div class="ask-form__item-group">
               <span class="ask-form__title">Уведомления об ответах</span>
@@ -53,43 +57,47 @@
               <a class="link" href="#">Добавить адресата</a>
             </div>
 
-            <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
-            </button>
-            <button class="ask-form__button-send button" type="submit">Создать обращение
-            </button>
+            <!-- <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
+            </button> -->
+            <div>
+              <button class="ask-form__button-send button" type="submit">Создать обращение
+              </button>
+            </div>
           </form>
         </div>
-        <div class="t-col t-col_4 help-desk__sidebar help-desk__sidebar--right">
-          <h3 class="help-desk__header h3">Статьи для вас</h3>
-          <ul class="help-desk__articles articles">
-            <li class="articles__item">
-              <a class="articles__link" href="#">Как подключить <strong>домен</strong></a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#"><strong>Домен</strong> не работает</a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Сайт не открывается</a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Как подключить почту для <strong>домен</strong>а</a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Как настроить протокол HTTPS</a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Как подтвердить право на <strong>домен</strong></a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Бесплатный суб<strong>домен</strong> на tilda.ws</a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Как купить <strong>домен</strong></a>
-            </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#">Как получить <strong>домен</strong> в подарок</a>
-            </li>
-          </ul>
+        <div class="t-col t-col_4 help-desk__sidebar">
+          <div class="help-desk__relevant">
+            <h3 class="help-desk__header h3">👋 Давайте подскажем</h3>
+            <ul class="help-desk__articles articles">
+              <li class="articles__item">
+                <a class="articles__link" href="#">Как подключить <strong>домен</strong></a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#"><strong>Домен</strong> не работает</a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Сайт не открывается</a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Как подключить почту для <strong>домен</strong>а</a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Как настроить протокол HTTPS</a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Как подтвердить право на <strong>домен</strong></a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Бесплатный суб<strong>домен</strong> на tilda.ws</a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Как купить <strong>домен</strong></a>
+              </li>
+              <li class="articles__item">
+                <a class="articles__link" href="#">Как получить <strong>домен</strong> в подарок</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
