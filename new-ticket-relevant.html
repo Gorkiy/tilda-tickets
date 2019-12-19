@@ -43,18 +43,42 @@
               <p class="ask-form__text">Сформулируйте ваш вопрос как можно более подробно. <br> Укажите ссылку на
                 опубликованную страницу с
                 проблемой — так мы сможем помочь вам быстрее.</p>
-              <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..." cols="50"></textarea>
+              <div class="ask-form__question-wrapper">
+                <textarea class="ask-form__question2" id="question" rows="5" placeholder="Опишите вашу проблему..." cols="50"></textarea>
+                <div class="ask-form__toolbar">
+                  <button class="ask-form__button-attach" type="button">Прикрепить файл
+                  </button>
+                </div>
+              </div>
+
+              <!-- <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
+                cols="50"></textarea>
               <div class="ask-form__files">
                 <a class=" link" href="#">Прикрепить файл
                 </a>
-              </div>
+              </div> -->
             </div>
             <div class="ask-form__item-group">
               <span class="ask-form__title">Уведомления об ответах</span>
-              <span class="ask-form__text">evgeniy@gmail.com</span>
-              <a class="link" href="#">Добавить адресата</a>
+              <div class="ask-form__notifications notifications">
+                <ul class="notifications__list">
+                  <li class="notifications__list-item notifications__list-item--author">
+                    evgeniy@gmail.com
+                  </li>
+                  <li class="notifications__list-item notifications__list-item--other">
+                    vasiliy@gmail.com
+                  </li>
+                  <li class="notifications__list-item notifications__list-item--other">
+                    masha@gmail.com
+                  </li>
+                  <li class="notifications__list-item notifications__list-item--button">
+                    Добавить адресата
+                  </li>
+                </ul>
+              </div>
+              <!-- <span class="ask-form__text">evgeniy@gmail.com</span>
+              <a class="link" href="#">Добавить адресата</a> -->
             </div>
-
             <!-- <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
             </button> -->
             <div>
