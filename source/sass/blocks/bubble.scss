@@ -8,6 +8,7 @@
 }
 
 .bubble__message {
+  margin-top: 10px;
   margin-left: auto;
   margin-bottom: 0;
   padding: 15px 20px;
@@ -39,7 +40,7 @@
 
 .bubble__avatar {
   margin-left: 15px;
-  margin-top: 20px;
+  margin-top: -15px;
   padding-top: 5px;
   order: 2;
   flex-shrink: 0;
@@ -62,6 +63,20 @@
     background-size: cover;
     border: 1px solid #ECECEC;
   }
+}
+
+.bubble__author {
+  font-size: 16px;
+  // font-weight: bold;
+  // color: $grey-color;
+
+  &--you {
+    text-align: right;
+  }
+}
+
+.bubble__author-account {
+  color: $grey-color;
 }
 
 .bubble__date {
@@ -88,10 +103,6 @@
   color: #aaaaaa;
 }
 
-.bubble__message {
-  // width: 100%;
-}
-
 .bubble__title {
   padding-left: 20px;
   border-left: 1px solid #ECECEC;
@@ -103,7 +114,7 @@
 }
 
 .bubble__attachment {
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   padding-left: 18px;
   position: relative;

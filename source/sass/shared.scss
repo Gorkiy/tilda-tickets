@@ -88,6 +88,14 @@
 .link {
   color: $accent-color;
   font-size: 16px;
+
+  &--black {
+    color: #000000;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: $tablet-width) {

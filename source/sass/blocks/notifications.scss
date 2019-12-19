@@ -1,0 +1,140 @@
+.notifications {
+  display: flex;
+  // align-items: center;
+  flex-wrap: wrap;
+}
+
+.notifications__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.notifications__title {
+  margin-right: 8px;
+}
+
+.notifications__list-item {
+  margin-right: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  // margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #ECECEC;
+  color: #000000;
+  
+  &--button {
+    padding-left: 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #000000;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  &--author {
+    background-color: #F1F9FF;
+  }
+
+  &--other {
+    position: relative;
+    padding-right: 24px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    width: 10px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+  }
+
+  &--other:hover {
+    background-color: transparent;
+    border: 1px solid $accent-color;
+  }
+
+  &--button:hover {
+    color: $accent-color;
+  }
+}
+
+
+.ticket__notifications-close {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  opacity: 0.5;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// .ticket__notifications-close {
+//   position: absolute;
+//   cursor: pointer;
+//   top: 20px;
+//   right: 20px;
+//   width: 18px;
+//   height: 18px;
+//   border: none;
+//   background-color: transparent;
+//   opacity: 0.5;
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 8px;
+//     left: 0;
+//     width: 20px;
+//     height: 1px;
+//     background-color: rgba(0, 0, 0, 0.5);
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+// }

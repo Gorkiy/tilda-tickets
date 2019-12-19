@@ -26,81 +26,49 @@
               <a class="ticket__back-link" href="tickets.html">← К списку заявок</a>
               <!-- <a class="ticket__back-link" href="#">✔︎ Закрыть заявку</a> -->
               <span class="ticket__status visually-hidden">Открыта</span>
+              <a class="ticket__close-link button button--secondary" href="#">✔︎ Закрыть заявку</a>
             </div>
             <div class="ticket__title-wrap">
               <h3 class="ticket__header h3">Можно ли указать резервный сервер, если связь с основным потеряна?</h3>
               <!-- <a class="ticket__button button" href="#">Закрыть заявку</a> -->
-              <a class="ticket__close-link button button--secondary" href="#">✔︎ Закрыть заявку</a>
-
             </div>
             <div class="ticket__info">
-              <span class="ticket__info-item ticket__info-id">Номер заявки: 524623</span>
-              <span class="ticket__info-item ticket__info-status">Статус: Открыта</span>
-              <div class="ticket__info-item ticket__info-notifications">
-                <span>Уведомления: evgeniy@gmail.com и 2 др.</span>
-                <a class="ticket__info-add-notify link" href="#">Настроить</a>
-
-                <div class="ticket__notifications visually-hidden">
-                  <button class="ticket__notifications-close" type="button">
-                    <span class="visually-hidden">Закрыть окно</span>
-                  </button>
-                  <div class="ask-form__item-group">
-                    <label class="ask-form__label" for="address">Добавьте адресата</label>
-                    <!-- <span class="ask-form__title">Добавьте адресата</span> -->
-                    <div class="ticket__item-group">
-                      <input class="ticket__input ask-form__input" type="text" name=" address" id="topic" placeholder="Укажите email" required="">
-                      <button class="button ticket__notifications-button" type="button">✔︎</button>
-                    </div>
-                  </div>
-
-                  <div class="ask-form__item-group">
-                    <span class="ask-form__title">Уведомления получают:</span>
-                  </div>
-                  <ul class="ticket__address-list">
-                    <li class="ticket__address-item ticket__address-item--main">evgeniy@gmail.com</li>
-                    <li class="ticket__address-item ticket__address-item--secondary">vasiliy@gmail.com
-                      <span class="ticket__close"></span>
-                    </li>
-                    <li class="ticket__address-item ticket__address-item--secondary">masha@gmail.com
-                      <span class="ticket__close"></span>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- <div class="ask-form__item-group">
-                  <label class="ask-form__label" for="topic">Тема</label>
-                  <input class="ask-form__input ask-form__input--active" type="text" name="topic" id="topic" value="домен"
-                    required>
-                </div> -->
-
+              <span class="ticket__info-item">Номер заявки: 524623</span>
+              <span class="ticket__info-item">Статус: Открыта</span>
+              <span class="ticket__info-item ticket__info-item--notify-title">Уведомления: </span>
+              <div class="ticket__info-item ticket__info-item--notifications notifications">
+                <ul class="notifications__list">
+                  <li class="notifications__list-item notifications__list-item--author">
+                    evgeniy@gmail.com
+                  </li>
+                  <li class="notifications__list-item notifications__list-item--other">
+                    vasiliy@gmail.com
+                  </li>
+                  <li class="notifications__list-item notifications__list-item--other">
+                    masha@gmail.com
+                  </li>
+                  <li class="notifications__list-item notifications__list-item--button">
+                    Добавить адресата
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="ticket__conversation">
-            <!-- <div class="ticket__bubble bubble bubble--author">
-              <span class="bubble__name">Петр Яковлев</span>
-              <span class="bubble__date">14:12</span>
-              <p class="bubble__message">Здравствуйте.<br><br> Заявка на рекламную кампанию уже больше 24 часов на
-                рассмотрении. Рекомендованных ответов: 3
-                Больше 24 часов на рассмотрении.</p>
-              <div class="bubble__attachment">
-                <a href="#" class="link">Screenshot 2019-11-2...</a>
-                <span class="help-desk__info-weight">(45 Кб)</span>
-              </div>
-            </div> -->
             <div class="ticket__bubble bubble">
               <div class="bubble__avatar">E</div>
               <div class="bubble__message-box">
                 <div class="bubble__message-wrap">
+                  <span class="bubble__author bubble__author--you">
+                    Вы <span class="bubble__author-account">(evgeniy@gmail.com)</span>
+                  </span>
                   <p class="bubble__message">Здравствуйте.<br><br> Заявка на рекламную кампанию уже больше 24 часов на
                     рассмотрении. Рекомендованных ответов: 3
                     Больше 24 часов на рассмотрении.
-
                     <span class="bubble__attachment">
-                      <a href="#" class="link">Screenshot 2019-11-2...</a>
+                      <a href="#" class="link link--black">Screenshot 2019-11-2...</a>
                       <span class="help-desk__info-weight">(45 Кб)</span>
                     </span>
-
                   </p>
                 </div>
                 <div class="bubble__message-wrap">
@@ -119,6 +87,7 @@
               <div class="bubble__avatar bubble__avatar--tech"></div>
               <div class="bubble__message-box bubble__message-box--tech">
                 <div class="bubble__message-wrap">
+                  <span class="bubble__author">Алексей Иванов</span>
                   <p class="bubble__message bubble__message--tech">Здравствуйте, Евгений!<br><br>
                     В большинстве случаев проверка занимает не более одного рабочего дня, но иногда на это может
                     потребоваться больше времени.
@@ -132,50 +101,57 @@
           </div>
           <div class="ticket__reply">
             <h4 class="help-desk__header h4">Написать ответ</h4>
-            <form class="ticket__reply-form reply-form" method="post" action="https://tilda.cc">
-              <div class="reply-form__item-group">
-                <textarea class="reply-form__question" id="question" rows="5" placeholder="Ваше сообщение..." cols="50"></textarea>
+            <form class="ticket__reply-form ask-form" method="post" action="https://tilda.cc">
+              <div class="ask-form__item-group">
+                <div class="ask-form__question-wrapper">
+                  <textarea class="ask-form__question2" id="question" rows="5" placeholder="Опишите вашу проблему..." cols="50"></textarea>
+                  <div class="ask-form__toolbar">
+                    <button class="ask-form__button-attach" type="button">Прикрепить файл
+                    </button>
+                  </div>
+                </div>
               </div>
-              <a class="reply-form__button-attach link" href="#">Прикрепить файл
-              </a>
-              <div class="reply-form__button-wrapper">
+              <!-- <a class="reply-form__button-attach link" href="#">Прикрепить файл
+              </a> -->
+              <div class="ask-form__button-wrapper">
                 <!-- <button class="reply-form__button-send button button--attach" type="button">Добавить файл
                 </button> -->
-                <button class="reply-form__button-send button" type="submit">Отправить
+                <button class="ask-form__button-send button" type="submit">Отправить
                 </button>
               </div>
             </form>
           </div>
         </div>
-        <!-- <div class="t-col t-col_4">
-          <div class="help-desk__sidebar help-desk__nav">
-            <h3 class="help-desk__header h3">Заявка №524623</h3>
-            <div class="help-desk__ticket-info">
-              <div class="help-desk__info-row">
-                <span class="help-desk__info-item help-desk__info-item--title">Дата создания</span>
-                <span class="help-desk__info-item">28.11.2019, 14:12</span>
-              </div>
-              <div class="help-desk__info-row">
-                <span class="help-desk__info-item help-desk__info-item--title">Сообщений</span>
-                <span class="help-desk__info-item">2</span>
-              </div>
-              <div class="help-desk__info-row">
-                <span class="help-desk__info-item help-desk__info-item--title">Файлы</span>
-                <span class="help-desk__info-item">
-                  <a href="#" class="link">Screenshot 2019-11-2...</a>
-                  <span class="help-desk__info-weight">(45 Кб)</span>
-                </span>
-              </div>
-              <div class="help-desk__info-row">
-                <span class="help-desk__info-item help-desk__info-item--title">Статус</span>
-                <span class="help-desk__info-item">В работе</span>
-              </div>
-              <button class="help-desk__button button" type="button">Закрыть заявку</button>
-            </div>
-          </div>
-        </div> -->
       </div>
     </main>
     <script src="js/script.js"></script>
   </body>
 </html>
+
+
+<!-- <div class="ticket__notifications visually-hidden">
+                  <button class="ticket__notifications-close" type="button">
+                    <span class="visually-hidden">Закрыть окно</span>
+                  </button>
+                  <div class="ask-form__item-group">
+                    <label class="ask-form__label" for="address">Добавьте адресата</label>
+                    <div class="ticket__item-group">
+                      <input class="ticket__input ask-form__input" type="text" name=" address" id="topic"
+                        placeholder="Укажите email" required>
+                      <button class="button ticket__notifications-button" type="button">✔︎</button>
+                    </div>
+                  </div>
+
+                  <div class="ask-form__item-group">
+                    <span class="ask-form__title">Уведомления получают:</span>
+                  </div>
+                  <ul class="ticket__address-list">
+                    <li class="ticket__address-item ticket__address-item--main">evgeniy@gmail.com</li>
+                    <li class="ticket__address-item ticket__address-item--secondary">vasiliy@gmail.com
+                      <span class="ticket__close"></span>
+                    </li>
+                    <li class="ticket__address-item ticket__address-item--secondary">masha@gmail.com
+                      <span class="ticket__close"></span>
+                    </li>
+                  </ul>
+                </div> -->
