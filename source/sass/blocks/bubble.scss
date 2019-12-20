@@ -8,10 +8,10 @@
 }
 
 .bubble__message {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: auto;
   margin-bottom: 0;
-  padding: 15px 20px;
+  padding: 10px 15px;
   display: block;
   max-width: 90%;
   font-size: 16px;
@@ -50,7 +50,34 @@
   width: 50px;
   height: 50px;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
+  color: white;
+  border-radius: 50%;
+  background-color: #62BCFF;
+
+  &--tech {
+    margin-left: 0;
+    margin-right: 15px;
+    order: 1;
+    background-image: url("../img/murrey.png");
+    background-size: cover;
+    border: 1px solid #ECECEC;
+  }
+}
+
+.bubble__avatar2 {
+  margin-left: 15px;
+  margin-top: 10px;
+  padding-top: 5px;
+  order: 2;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  font-weight: 400;
   color: white;
   border-radius: 50%;
   background-color: #62BCFF;
@@ -66,9 +93,8 @@
 }
 
 .bubble__author {
-  font-size: 16px;
-  // font-weight: bold;
-  // color: $grey-color;
+  font-size: 15px;
+  font-weight: 700;
 
   &--you {
     text-align: right;
@@ -77,6 +103,26 @@
 
 .bubble__author-account {
   color: $grey-color;
+  font-weight: 500;
+}
+
+.bubble__author2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  width: auto;
+  // text-align: right;
+
+  &--you2 {
+    // text-align: right;
+  }
+}
+
+.bubble__author-account2 {
+  color: $grey-color;
+  font-weight: 500;
 }
 
 .bubble__date {
@@ -89,12 +135,13 @@
 
 .bubble__timestamp {
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
   display: block;
   color: #aaaaaa;
+  text-align: right;
 
   &--tech {
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -126,6 +173,15 @@
     top: 3px;
     width: 14px;
     height: 14px;
-    background-image: url("../img/attach.svg");
+    background-image: url("../img/icon-attach.svg");
   }
+}
+
+.bubble__attachment-link {
+  font-size: 14px;
+}
+
+.bubble__attachment-weight {
+  color: $grey-color;
+  font-size: 14px;
 }

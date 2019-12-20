@@ -40,28 +40,8 @@
 
 .help-desk__body {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
-}
-
-.help-desk__content {
-  // padding-left: 40px;
-  // flex-grow: 1;
-  // width: auto;
-  // border-left: 1px solid #ECECEC;
-
-  &--left {
-    // padding-left: 0;
-    border-left: none;
-    // padding-right: 40px;
-    // border-right: 1px solid #ECECEC;
-  }
-}
-
-.help-desk__sidebar {
-  &--right {
-    // padding-left: 40px;
-    // border-left: 1px solid #ECECEC;
-  }
 }
 
 .help-desk__header {
@@ -85,15 +65,12 @@
 
 .help-desk__ask-form {
   margin-top: 40px;
-  // max-width: 80%;
 }
 
 .help-desk__relevant {
-  margin-top: 220px;
+  margin-top: 230px;
   padding: 20px;
-  // border: 1px solid #ECECEC;
   border: 1px solid #B1DEFF;
-  // background-color: #B1DEFF;
   border-radius: 3px;
 }
 
@@ -114,66 +91,13 @@
 }
 
 // .help-desk__button-add {
-//   position: absolute;
-//   top: 17px;
-//   right: 20px;
-//   display: block;
-//   width: 36px;
-//   height: 36px;
-//   background-color: $accent-color;
+//   height: 44px;
 //   border-radius: 3px;
-
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 17px;
-//     left: 8px;
-//     width: 20px;
-//     height: 1px;
-//     background-color: #ffffff;
-//   }
-
-//   &::after {
-//     transform: rotate(-90deg);
-//   }
+//   display: flex;
+//   align-items: center;
+//   padding: 0 30px;
+//   border-radius: 50px;
 // }
-
-// .help-desk__button-add {
-//   position: relative;
-//   height: 36px;
-//   display: inline-block;
-//   background-color: $accent-color;
-//   border-radius: 3px;
-//   padding: 7px 30px;
-//   display: inline-block;
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 16px;
-//     left: 12px;
-//     width: 12px;
-//     height: 1px;
-//     background-color: #ffffff;
-//   }
-
-//   &::after {
-//     transform: rotate(-90deg);
-//   }
-// }
-
-.help-desk__button-add {
-  // position: relative;
-  height: 44px;
-  // display: inline-block;
-  // background-color: $accent-color;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-  border-radius: 50px;
-}
 
 .help-desk__menu {
   @include list-reset();

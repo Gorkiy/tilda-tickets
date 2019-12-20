@@ -1,5 +1,4 @@
 .ask-form {
-  // padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -22,15 +21,22 @@
 }
 
 .ask-form__item-group {
-  margin-bottom: 32px;
+  margin-bottom: 42px;
   position: relative;
   display: flex;
   flex-direction: column;
+
+  &--question {
+    margin-bottom: 24px;
+  }
+
+  &--notify {
+    margin-bottom: 36px;
+  }
 }
 
 .ask-form__label,
 .ask-form__title {
-  // margin-bottom: 15px;
   font-size: 14px;
 	line-height: 10px;
 	color: #000;
@@ -66,7 +72,13 @@
   background-color: #ffffff;
 
   &:focus {
-    border: 1px solid $accent-color;
+    border: 1px solid #000000;
+  }
+
+  .ask-form__input {
+    &--active {
+      border-color: $accent-color;
+    }
   }
 
   // &:hover {
@@ -75,48 +87,61 @@
 }
 
 .ask-form__question {
-  // margin-top: 0;
   padding-top: 16px;
   min-height: 150px;
   resize: none;
+
+  &--ticket {
+    // border: 1px solid #B1DEFF;
+    // border: 1px solid #62BCFF;
+    min-height: 50px;
+    transition: all 0.2s ease-out;
+  }
+
+  &--ticket:focus {
+    border: 1px solid #B1DEFF;
+    border: 1px solid #62BCFF;
+    min-height: 150px;
+    box-shadow: 5px 5px 0 1px #B1DEFF;
+  }
 }
 
-.ask-form__question2 {
-  font-family: inherit;
-  padding: 0 20px;
-  width: 100%; 
-  height: 50px; 
-  color:#000000; 
-  font-size: 16px;
-  line-height: 1.33;
-  outline: none;
-  background-color: #ffffff;
-  border: 1px solid transparent;
+// .ask-form__question2 {
+//   font-family: inherit;
+//   padding: 0 20px;
+//   width: 100%; 
+//   height: 50px; 
+//   color:#000000; 
+//   font-size: 16px;
+//   line-height: 1.33;
+//   outline: none;
+//   background-color: #ffffff;
+//   border: 1px solid transparent;
 
-  &:focus {
-    border: 1px solid $accent-color;
-  }
+//   &:focus {
+//     border: 1px solid $accent-color;
+//   }
 
   // &:hover {
   //   border: 1px solid $accent-color;
   // }
-}
+// }
 
-.ask-form__question2 {
-  // margin-top: 0;
-  margin: 0;
-  padding-top: 16px;
-  min-height: 150px;
-  resize: none;
-}
+// .ask-form__question2 {
+//   // margin-top: 0;
+//   margin: 0;
+//   padding-top: 16px;
+//   min-height: 150px;
+//   resize: none;
+// }
 
-.ask-form__question-wrapper {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ECECEC;
-  border-radius: 3px;
-}
+// .ask-form__question-wrapper {
+//   margin-top: 15px;
+//   display: flex;
+//   flex-direction: column;
+//   border: 1px solid #ECECEC;
+//   border-radius: 3px;
+// }
 
 .ask-form__select-wrapper {
   position: relative;
@@ -150,56 +175,25 @@
   color: darkgray;
 }
 
-.ask-form__input {
-  // transition: all 0.15s ease-in-out;
-
-  // &:valid {
-  //   border: 1px solid green;
-  // }
-
-  // &:valid + .ask-form__label {
-  //   bottom: 40px;
-  //   background-color: #1f1d1d;
-  // }
-
-  // &--invalid {
-  //   border-color: #d26f13;
-  // }
-
-  // &:focus.ask-form__input--invalid {
-  //   border-color: #d26f13;
-  // }
-
-  &--active {
-    border-color: $accent-color;
-  }
+.ask-form__notifications {
+  font-size: 14px;
+  margin-top: 10px;
 }
-
-// .ask-form__files {
-//   margin-top: 20px;
-// }
 
 .ask-form__toolbar {
-  padding: 10px 20px; 
-  border-top: 1px solid #ECECEC;
-}
-
-.ask-form__notifications {
-  font-size: 16px;
-  margin-top: 10px;
+  padding: 10px 0; 
 }
 
 .ask-form__button-attach {
   margin: 0;
   display: block;
-  // margin-top: 10px;
   padding-left: 20px;
   position: relative;
   font-size: 16px;
   font-family: inherit;
   border: none;
   background-color: transparent;
-  color: $grey-color;
+  color: #000000;
   cursor: pointer;
 
   &::before {
@@ -209,7 +203,7 @@
     top: 3px;
     width: 14px;
     height: 14px;
-    background-image: url("../img/attach.svg");
+    background-image: url("../img/icon-attach.svg");
   }
 
   &:hover {

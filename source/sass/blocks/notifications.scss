@@ -15,12 +15,17 @@
 }
 
 .notifications__list-item {
+  position: relative;
   margin-right: 8px;
   margin-top: 4px;
   margin-bottom: 4px;
-  // margin-bottom: 8px;
-  padding: 5px 10px;
-  border-radius: 50px;
+  padding: 4px 24px 4px 8px;
+  max-height: 29px;
+
+  display: flex;
+  align-items: center;
+  // font-size: 14px;
+  border-radius: 3px;
   border: 1px solid transparent;
   background-color: #ECECEC;
   color: #000000;
@@ -30,25 +35,68 @@
     cursor: pointer;
     border: 1px solid transparent;
     color: #000000;
-    text-decoration: underline;
+    // text-decoration: underline;
     background-color: transparent;
   }
 
   &--author {
     background-color: #F1F9FF;
+    padding-right: 8px;
   }
 
-  &--other {
-    position: relative;
-    padding-right: 24px;
-    cursor: pointer;
+  // &--other {
+  //   position: relative;
+  //   padding-right: 24px;
+  //   cursor: pointer;
 
-    &::before,
-    &::after {
+  //   &::before,
+  //   &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 15px;
+  //   right: 8px;
+  //   width: 10px;
+  //   height: 1px;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  // }
+
+  // &::before {
+  //   transform: rotate(45deg);
+  //   box-shadow: none;
+  // }
+
+  // &::after {
+  //   transform: rotate(-45deg);
+  // }
+  // }
+
+  // &--other:hover {
+  //   background-color: transparent;
+  //   border: 1px solid $accent-color;
+  // }
+
+  &--button:hover {
+    color: $accent-color;
+  }
+}
+
+.notifications__delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  width: 28px;
+  height: 28px;
+  // border: 1px solid red;
+  cursor: pointer;
+
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 15px;
-    right: 8px;
+    top: 13px;
+    right: 7px;
     width: 10px;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -62,15 +110,10 @@
   &::after {
     transform: rotate(-45deg);
   }
-  }
 
-  &--other:hover {
-    background-color: transparent;
-    border: 1px solid $accent-color;
-  }
-
-  &--button:hover {
-    color: $accent-color;
+  &:hover::before,
+  &:hover::after {
+    background-color: $accent-color;
   }
 }
 

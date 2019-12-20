@@ -39,50 +39,39 @@
               <input class="ask-form__input ask-form__input--active" type="text" name="topic" id="topic" value="домен"
                 required>
             </div>
-            <div class="ask-form__item-group">
+            <div class="ask-form__item-group ask-form__item-group--question">
               <span class="ask-form__title">Ваш вопрос</span>
               <p class="ask-form__text">Сформулируйте ваш вопрос как можно более подробно. <br> Укажите ссылку на
                 опубликованную страницу с
                 проблемой — так мы сможем помочь вам быстрее.</p>
-              <div class="ask-form__question-wrapper">
-                <textarea class="ask-form__question2" id="question" rows="5" placeholder="Опишите вашу проблему..."
-                  cols="50"></textarea>
-                <div class="ask-form__toolbar">
-                  <button class="ask-form__button-attach" type="button">Прикрепить файл
-                  </button>
-                </div>
-              </div>
-
-              <!-- <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
+              <textarea class="ask-form__question" id="question" rows="5" placeholder="Опишите вашу проблему..."
                 cols="50"></textarea>
-              <div class="ask-form__files">
-                <a class=" link" href="#">Прикрепить файл
-                </a>
-              </div> -->
+              <div class="ask-form__toolbar">
+                <button class="ask-form__button-attach" type="button">Прикрепить файл
+                </button>
+              </div>
             </div>
-            <div class="ask-form__item-group">
+            <div class="ask-form__item-group ask-form__item-group--notify">
               <span class="ask-form__title">Уведомления об ответах</span>
               <div class="ask-form__notifications notifications">
                 <ul class="notifications__list">
                   <li class="notifications__list-item notifications__list-item--author">
-                    evgeniy@gmail.com
+                    <span class="notifications__email">evgeniy@gmail.com</span>
                   </li>
                   <li class="notifications__list-item notifications__list-item--other">
-                    vasiliy@gmail.com
+                    <span class="notifications__email">vasiliy@gmail.com</span>
+                    <button class="notifications__delete" type="button"></button>
                   </li>
                   <li class="notifications__list-item notifications__list-item--other">
-                    masha@gmail.com
+                    <span class="notifications__email">masha@gmail.com</span>
+                    <button class="notifications__delete" type="button"></button>
                   </li>
                   <li class="notifications__list-item notifications__list-item--button">
                     Добавить адресата
                   </li>
                 </ul>
               </div>
-              <!-- <span class="ask-form__text">evgeniy@gmail.com</span>
-              <a class="link" href="#">Добавить адресата</a> -->
             </div>
-            <!-- <button class="ask-form__button-attach button button--attach" type="button">Добавьте файл
-            </button> -->
             <div>
               <button class="ask-form__button-send button" type="submit">Создать обращение
               </button>
@@ -91,7 +80,7 @@
         </div>
         <div class="t-col t-col_4 help-desk__sidebar">
           <div class="help-desk__relevant">
-            <h3 class="help-desk__header h3">👋 Давайте подскажем</h3>
+            <h3 class="help-desk__header h3">👋 Готовые ответы</h3>
             <ul class="help-desk__articles articles">
               <li class="articles__item">
                 <a class="articles__link" href="#">Как подключить <strong>домен</strong></a>
