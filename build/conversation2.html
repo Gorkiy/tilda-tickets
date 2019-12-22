@@ -19,8 +19,8 @@
           </div>
         </div>
       </div> -->
-      <div class="t-container help-desk__body">
-        <div class="t-col t-col_12 help-desk__ticket ticket">
+      <span class="t-container help-desk__body">
+        <span class="t-col t-col_12 help-desk__ticket ticket">
           <div class="ticket__head">
             <div class="ticket__head-nav">
               <a class="ticket__back-link" href="tickets.html">← К списку заявок</a>
@@ -54,73 +54,94 @@
               <button class="ticket__close-link button button--secondary" type="button">Закрыть заявку</button>
             </div>
           </div>
-          <div class="ticket__conversation2">
+          <span class="ticket__conversation2">
             <div class="ticket__bubble bubble">
               <div class="bubble__avatar2">E</div>
               <div class="bubble__message-box">
                 <div class="bubble__message-wrap">
-                  <p class="bubble__message">
-                    <span class="bubble__author2 bubble__author--you2">
-                      Вы <span class="bubble__author-account2">(evgeniy@gmail.com)</span>
-                    </span>
-                    Здравствуйте.<br> Заявка на рекламную кампанию уже больше 24 часов на
-                    рассмотрении. Рекомендованных ответов: 3
-                    Больше 24 часов на рассмотрении.
-                    <span class="bubble__attachment">
-                      <a href="#" class="bubble__attachment-link link link--black">Screenshot 2019-11-2...</a>
-                      <span class="bubble__attachment-weight">(45 Кб)</span>
-                    </span>
-                  </p>
+                  <div class="bubble__message2">
+                    <div class="bubble__heading2">
+                      <span class="bubble__author2 bubble__author--you2">
+                        Вы <span class="bubble__author-account2">(evgeniy@gmail.com)</span>
+                      </span>
+                    </div>
+                    <div class="bubble__text-wrap2">
+                      <p class="bubble__message-text2">Здравствуйте.<br> Заявка на рекламную кампанию уже больше 24
+                        часов
+                        на
+                        рассмотрении. Рекомендованных ответов: 3
+                        Больше 24 часов на рассмотрении.
+                      </p>
+                      <span class="bubble__attachment">
+                        <a href="#" class="bubble__attachment-link link link--black">Screenshot 2019-11-2...</a>
+                        <span class="bubble__attachment-weight">(45 Кб)</span>
+                      </span>
+                      <span class="bubble__timestamp2">15:44</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="bubble__message-wrap">
-                  <p class="bubble__message">Прием-прием! </p>
+                  <div class="bubble__message2">
+                    <div class="bubble__text-wrap2">
+                      <p class="bubble__message-text2">Прием-прием!</p>
+                      <span class="bubble__timestamp2">15:44</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="bubble__message-wrap">
-                  <p class="bubble__message">Это очень срочно. Когда вы сможете помочь?</p>
+                  <div class="bubble__message2">
+                    <div class="bubble__text-wrap2">
+                      <p class="bubble__message-text2">Это очень срочно. Когда вы сможете помочь?</p>
+                      <span class="bubble__timestamp2">15:45</span>
+                    </div>
+                  </div>
                 </div>
-                <span class="bubble__timestamp bubble__timestamp">1 день назад</span>
               </div>
             </div>
             <span class="ticket__timeline ticket__timeline--assigned">👋 <strong>Алексей Иванов</strong> будет помогать
               вам.</span>
             <span class="ticket__timeline ticket__timeline--date">29 ноября, 2019</span>
-            <div class="ticket__bubble bubble">
+            <span class="ticket__bubble bubble">
               <div class="bubble__avatar2 bubble__avatar2--tech"></div>
-              <div class="bubble__message-box bubble__message-box--tech">
-                <div class="bubble__message-wrap">
-                  <p class="bubble__message bubble__message--tech">
-                    <span class="bubble__author2">Алексей Иванов</span>
-                    Здравствуйте, Евгений!<br><br>
-                    В большинстве случаев проверка занимает не более одного рабочего дня, но иногда на это может
-                    потребоваться больше времени.
-                    Если рассмотрение Вашего объявления занимает более двух рабочих дней, заполните данную форму она
-                    поможет
-                    ускорить данный процесс. </p>
-                </div>
-                <span class="bubble__timestamp bubble__timestamp--tech">2 часа назад</span>
-              </div>
-            </div>
-          </div>
-          <div class="ticket__reply">
-            <h4 class="help-desk__header h4">💬 Напишите ответ</h4>
+              <span class="bubble__message-box bubble__message-box--tech">
+                <span class="bubble__message-wrap">
+                  <span class="bubble__message2 bubble__message2--tech">
+                    <div class="bubble__heading2">
+                      <span class="bubble__author2 bubble__author--you2">
+                        Алексей Иванов</span>
+                    </div>
+                    <span class="bubble__text-wrap2">
+                      <p class="bubble__message-text2">Здравствуйте, Евгений!<br>
+                        В большинстве случаев проверка занимает не более одного рабочего дня, но иногда на это может
+                        потребоваться больше времени.
+                        Если рассмотрение Вашего объявления занимает более двух рабочих дней, заполните данную форму она
+                        поможет
+                        ускорить данный процесс.
+                      </p>
+                      <span class="bubble__timestamp2">12:15</span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <div class="ticket__reply2">
+            <!-- <h4 class="help-desk__header h4">💬 Напишите ответ</h4> -->
             <form class="ticket__reply-form ask-form" method="post" action="https://tilda.cc">
-              <div>
-                <textarea class="ask-form__question ask-form__question--ticket" id="question" rows="5" placeholder="Ваш комментарий" cols="50"></textarea>
-                <div class="ask-form__toolbar">
-                  <button class="ask-form__button-attach" type="button">Прикрепить файл
+              <!-- <div> -->
+              <textarea class="ask-form__question ask-form__question--ticket" id="question" rows="5" placeholder="Ваш комментарий" cols="50"></textarea>
+              <div class="ask-form__toolbar">
+                <button class="ask-form__button-attach" type="button">Прикрепить файл
+                </button>
+                <!-- </div> -->
+                <div class="ask-form__button-wrapper2">
+                  <button class="ask-form__button-send button" type="submit">Отправить
                   </button>
                 </div>
-              </div>
-          </form></div>
-          <div class="ask-form__button-wrapper">
-            <button class="ask-form__button-send button" type="submit">Отправить
-            </button>
+            </div></form>
           </div>
           
-        </div>
-      </div>
-      
-    </main>
+    </span></span></main>
     <script src="js/script.js"></script>
   </body>
 </html>

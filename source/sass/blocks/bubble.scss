@@ -27,6 +27,33 @@
   }
 }
 
+.bubble__message2 {
+  position: relative;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding: 10px 15px;
+  display: block;
+  max-width: 90%;
+  font-size: 16px;
+  background-color: #F1F9FF;
+  border: 1px solid #B1DEFF;
+  border-radius: 3px;
+
+  &--tech {
+    margin-right: auto;
+    margin-left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ECECEC;
+  }
+}
+
+.bubble__text-wrap2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .bubble__message-box {
   margin-left: auto;
   order: 1;
@@ -106,25 +133,6 @@
   font-weight: 500;
 }
 
-.bubble__author2 {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 700;
-  display: block;
-  width: auto;
-  // text-align: right;
-
-  &--you2 {
-    // text-align: right;
-  }
-}
-
-.bubble__author-account2 {
-  color: $grey-color;
-  font-weight: 500;
-}
-
 .bubble__date {
   margin-left: auto;
   font-size: 14px;
@@ -143,6 +151,46 @@
   &--tech {
     text-align: left;
   }
+}
+
+.bubble__heading2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  // display: flex;
+}
+
+.bubble__author2 {
+  font-size: 15px;
+  // width: auto;
+  color: $grey-color;
+
+  &--you2 {
+    // text-align: right;
+  }
+}
+
+.bubble__author-account2 {
+  color: $grey-color;
+  // font-weight: 500;
+}
+
+.bubble__timestamp2 {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  color: #aaaaaa;
+  margin-left: auto;
+  font-size: 12px;
+  // align-self: baseline;
+
+  &--tech {
+    text-align: left;
+  }
+}
+
+.bubble__message-text2 {
+  margin: 0;
+  padding-right: 30px;
 }
 
 .bubble__title,

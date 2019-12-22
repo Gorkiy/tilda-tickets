@@ -61,8 +61,11 @@
 }
 
 .ticket__reply {
-  // border-top: 1px solid #ECECEC;
-  // margin-top: 20px;
+}
+
+.ticket__reply2 {
+  padding: 20px 65px;
+  background-color: #F1F9FF;
 }
 
 .ticket__reply-form {
@@ -79,11 +82,12 @@
   margin-top: 12px;
   // display: inline;
   text-align: center;
-  // font-size: 14px;
+  font-size: 15px;
   // text-transform: uppercase;
 
   &--date {
     padding: 5px 20px;
+    font-size: 14px;
     // border-bottom: 2px solid #B1DEFF;
     background-color: #ECECEC;
     border-radius: 50px;
