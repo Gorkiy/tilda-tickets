@@ -1,23 +1,65 @@
 // /api/gettickets/
+// /api/gettickets/?slice=1
+// /api/gettickets/?opened=false&slice=1
+// GET
 [
   {
-    "id": 152364,
-    "subject": "Проблема с оплатой",
-    "isOpened": true,
-    "date": 1577102364129,
-    "repliesCount": 4,
-    "notifications": [
-      "evgeniy@gmail.com",
-      "vasiliy@gmail.com"
+    "slice": 1,
+    "opened": false,
+    "tickets": [
+      {
+        "uid": 152364,
+        "userid": "",
+        "userKey": "",
+        "category": "billing",
+        "subject": "Проблема с оплатой",
+        "isOpened": true,
+        "date": 1577102364,
+        "repliesCnt": 4,
+        "notifications": [
+          "evgeniy@gmail.com",
+          "vasiliy@gmail.com"
+        ]
+      }
     ]
   }
 ]
-// /api/getticket/$id
+// /api/getnewtickets/?date=1577102364
+// GET
+[
+  {
+    "slice": 1,
+    "opened": true,
+    "tickets": [
+      {
+        "uid": 152364,
+        "userid": "",
+        "userKey": "",
+        "category": "billing",
+        "subject": "Проблема с оплатой",
+        "isOpened": true,
+        "date": 1577102364,
+        "repliesCnt": 4,
+        "notifications": [
+          "evgeniy@gmail.com",
+          "vasiliy@gmail.com"
+        ]
+      }
+    ]
+  }
+]
+// /api/getticket/?id=152364
+// /api/getticket/?id=152364&slice=1
+// GET
 {
-  "id": 152364,
+  "uid": 152364,
+  "userid": "",
+  "userKey": "",
+  "category": "billing",
   "subject": "Проблема с оплатой",
   "isOpened": true,
-  "date": 1577102364129,
+  "date": 1577102364,
+  "lastMsgTime": 1577103435,
   "repliesCount": 4,
   "notifications": [
     "evgeniy@gmail.com",
@@ -25,31 +67,89 @@
   ],
   "messages": [
     {
-      "author": "client",
-      "account": "evgeniy@gmail.com",
-      "date": 1577102364129,
+      "msgid": 989456,
+      "role": "client",
+      "name": "Evgeniy",
+      "email": "evgeniy@gmail.com",
+      "date": 1577102364,
       "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
-      "attachedFiles": [
+      "files": [
         {
-          "fileName": "Screenshot-12-11-2019.jpg",
-          "url": "",
-          "size": "45Кб"
+          "path": "/url/to/img.jpg"
         }
       ]
     }
   ]
 }
+// /api/getnewmessages/?id=152364&lastMsgTime=152364
+// GET
+{
+  "uid": 152364,
+  "userid": "",
+  "userKey": "",
+  "lastMsgTime": 1577103435
+}
+// /api/deletemessage/?id=152364&mgid=989456
+// POST
+{
+  "uid": 152364,
+  "msgid": 989456,
+  "userid": "",
+  "userKey": "",
+}
+// /api/closeticket/?id=152364
+// POST
+{
+  "uid": 152364,
+  "userID": "",
+  "userKey": "",
+}
+// /api/openticket/?id=152364
+// POST
+{
+  "uid": 152364,
+  "userID": "",
+  "userKey": "",
+}
+// /api/addmessage/?id=152364
+// POST
+{
+  "uid": 152364,
+  "userid": "",
+  "userKey": "",
+  "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
+  "date": 1577102364
+}
 // /api/createticket
+// POST
 [
   {
-    "id": 152364, // ?
+    "userid": "",
+    "userKey": "",
+    "category": "billing",
     "subject": "Проблема с оплатой",
     "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
-    "date": 1577102364129,
+    "date": 1577102364,
     "notifications": [
       "evgeniy@gmail.com",
       "vasiliy@gmail.com"
     ],
-    "attachedFiles": []
+    "files": []
   }
 ]
+// /api/addnotification/?email=vasya@gmail.com
+// POST
+{
+  "uid": 152364,
+  "userid": "",
+  "userKey": "",
+  "email": "vasya@gmail.com"
+}
+// /api/deletenotification/?email=vasya@gmail.com
+// POST
+{
+  "uid": 152364,
+  "userid": "",
+  "userKey": "",
+  "email": "vasya@gmail.com"
+}
