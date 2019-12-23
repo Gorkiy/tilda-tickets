@@ -1,21 +1,23 @@
+// * * *
 // /api/gettickets/
-// /api/gettickets/?slice=1
-// /api/gettickets/?opened=false&slice=1
-// GET
+// [GET]
+//
+// IN
+// userid, userkey, slice, status
+//
+// OUT
 [
   {
-    "slice": 1,
-    "opened": false,
+    "slice": 2,
+    "nextslice": 3,
     "tickets": [
       {
         "uid": 152364,
-        "userid": "",
-        "userKey": "",
         "category": "billing",
         "subject": "Проблема с оплатой",
-        "isOpened": true,
-        "date": 1577102364,
-        "repliesCnt": 4,
+        "status": "open",
+        "created": 1577102364,
+        "msgs_cnt": 4,
         "notifications": [
           "evgeniy@gmail.com",
           "vasiliy@gmail.com"
@@ -24,132 +26,112 @@
     ]
   }
 ]
-// /api/getnewtickets/?date=1577102364
-// GET
-[
-  {
-    "slice": 1,
-    "opened": true,
-    "tickets": [
-      {
-        "uid": 152364,
-        "userid": "",
-        "userKey": "",
-        "category": "billing",
-        "subject": "Проблема с оплатой",
-        "isOpened": true,
-        "date": 1577102364,
-        "repliesCnt": 4,
-        "notifications": [
-          "evgeniy@gmail.com",
-          "vasiliy@gmail.com"
-        ]
-      }
-    ]
-  }
-]
-// /api/getticket/?id=152364
-// /api/getticket/?id=152364&slice=1
-// GET
+// * * *
+// /api/getticket/
+// [GET]
+//
+// IN
+// userid, userkey, ticketuid
+//
+// OUT
 {
   "uid": 152364,
-  "userid": "",
-  "userKey": "",
   "category": "billing",
   "subject": "Проблема с оплатой",
-  "isOpened": true,
-  "date": 1577102364,
-  "lastMsgTime": 1577103435,
-  "repliesCount": 4,
+  "status": "open",
+  "created": 1577102364,
+  "msgs_cnt": 4,
   "notifications": [
     "evgeniy@gmail.com",
     "vasiliy@gmail.com"
-  ],
+  ]
+}
+// * * *
+// /api/getmessages/
+// [GET]
+//
+// IN
+// userid, userkey, ticketuid, created, slice
+//
+// OUT
+{
+  "slice": 2,
+  "nextslice": 3,
+  "ticketuid": 13211,
   "messages": [
     {
-      "msgid": 989456,
+      "uid": 989456,
       "role": "client",
       "name": "Evgeniy",
       "email": "evgeniy@gmail.com",
-      "date": 1577102364,
-      "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
+      "created": 1577102364,
+      "message": "Здравствуйте. Заявка на рекламную кампанию уже больше 24 часов на рассмотрении.",
       "files": [
         {
-          "path": "/url/to/img.jpg"
+          "url": "/url/to/img.jpg"
         }
       ]
     }
   ]
 }
-// /api/getnewmessages/?id=152364&lastMsgTime=152364
-// GET
-{
-  "uid": 152364,
-  "userid": "",
-  "userKey": "",
-  "lastMsgTime": 1577103435
-}
-// /api/deletemessage/?id=152364&mgid=989456
-// POST
-{
-  "uid": 152364,
-  "msgid": 989456,
-  "userid": "",
-  "userKey": "",
-}
-// /api/closeticket/?id=152364
-// POST
-{
-  "uid": 152364,
-  "userID": "",
-  "userKey": "",
-}
-// /api/openticket/?id=152364
-// POST
-{
-  "uid": 152364,
-  "userID": "",
-  "userKey": "",
-}
-// /api/addmessage/?id=152364
-// POST
-{
-  "uid": 152364,
-  "userid": "",
-  "userKey": "",
-  "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
-  "date": 1577102364
-}
+// * * *
+// /api/deletemessage/
+// [POST]
+//
+// IN
+// userid, userkey, ticketuid, msguid
+//
+// OUT
+// ...
+// * * *
+// /api/closeticket/
+// [POST]
+// IN
+// userid, userkey, ticketuid
+//
+// OUT
+// ...
+// * * *
+// /api/openticket/
+// [POST]
+// IN
+// userid, userkey, ticketuid
+//
+// OUT
+// ...
+// * * *
+// /api/addmessage/
+// [POST]
+//
+// IN
+// userid, userkey, ticketuid, msguid, message, created
+//
+// OUT
+// ...
+// * * *
 // /api/createticket
-// POST
-[
-  {
-    "userid": "",
-    "userKey": "",
-    "category": "billing",
-    "subject": "Проблема с оплатой",
-    "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
-    "date": 1577102364,
-    "notifications": [
-      "evgeniy@gmail.com",
-      "vasiliy@gmail.com"
-    ],
-    "files": []
-  }
-]
-// /api/addnotification/?email=vasya@gmail.com
-// POST
-{
-  "uid": 152364,
-  "userid": "",
-  "userKey": "",
-  "email": "vasya@gmail.com"
-}
-// /api/deletenotification/?email=vasya@gmail.com
-// POST
-{
-  "uid": 152364,
-  "userid": "",
-  "userKey": "",
-  "email": "vasya@gmail.com"
-}
+// [POST]
+// 
+// IN
+// userid, userkey, category, subject, message, created, notifications, files
+//
+// OUT
+// ...
+// * * *
+// /api/addnotification/
+// [POST]
+//
+// IN
+// userid, userkey, ticketuid, email
+//
+// OUT
+// ...
+// * * *
+// /api/deletenotification/
+// [POST]
+//
+// IN
+// userid, userkey, ticketuid, email
+//
+// OUT
+// ...
