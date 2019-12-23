@@ -1,12 +1,12 @@
 // /api/gettickets/
 [
   {
-    id: 152364,
-    subject: "Проблема с оплатой",
-    isOpened: true,
-    date: 1577102364129,
-    repliesCount: 4,
-    notifications: [
+    "id": 152364,
+    "subject": "Проблема с оплатой",
+    "isOpened": true,
+    "date": 1577102364129,
+    "repliesCount": 4,
+    "notifications": [
       "evgeniy@gmail.com",
       "vasiliy@gmail.com"
     ]
@@ -14,26 +14,26 @@
 ]
 // /api/getticket/$id
 {
-  id: 152364,
-  subject: "Проблема с оплатой",
-  isOpened: true,
-  date: 1577102364129,
-  repliesCount: 4,
-  notifications: [
+  "id": 152364,
+  "subject": "Проблема с оплатой",
+  "isOpened": true,
+  "date": 1577102364129,
+  "repliesCount": 4,
+  "notifications": [
     "evgeniy@gmail.com",
     "vasiliy@gmail.com"
   ],
-  messages: [
+  "messages": [
     {
-	    author: "client",
-	    account: "evgeniy@gmail.com",
-	    date: 1577102364129,
-	    message: "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
-	    attachedFiles: [
+      "author": "client",
+      "account": "evgeniy@gmail.com",
+      "date": 1577102364129,
+      "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
+      "attachedFiles": [
         {
-          fileName: "Screenshot-12-11-2019.jpg",
-          url: "",
-          size: "45Кб"
+          "fileName": "Screenshot-12-11-2019.jpg",
+          "url": "",
+          "size": "45Кб"
         }
       ]
     }
@@ -42,14 +42,14 @@
 // /api/createticket
 [
   {
-    id: 152364, // ?
-    subject: "Проблема с оплатой",
-    message: "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
-    date: 1577102364129,
-    notifications: [
+    "id": 152364, // ?
+    "subject": "Проблема с оплатой",
+    "message": "Здравствуйте. Заявка на рекламную кампанию 	уже больше 24 часов на рассмотрении.",
+    "date": 1577102364129,
+    "notifications": [
       "evgeniy@gmail.com",
       "vasiliy@gmail.com"
     ],
-    attachedFiles: []
+    "attachedFiles": []
   }
 ]
