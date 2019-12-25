@@ -1,4 +1,16 @@
 // * * *
+// /api/getticketscount
+// [GET]
+//
+// IN
+// /
+//
+// OUT
+{
+  "open": 7,
+  "archieved": 2
+}
+// * * *
 // /api/gettickets/
 // [GET]
 //
@@ -16,9 +28,8 @@
         "category": "billing",
         "subject": "Проблема с оплатой",
         "status": "open",
-        "created": 1577102364,
+        "date_created": 1577102364,
         "msgs_cnt": 4,
-        "unread": true,
         "notifications": [
           "evgeniy@gmail.com",
           "vasiliy@gmail.com"
@@ -40,9 +51,8 @@
   "category": "billing",
   "subject": "Проблема с оплатой",
   "status": "open",
-  "created": 1577102364,
+  "date_created": 1577102364,
   "msgs_cnt": 4,
-  "unread": true,
   "notifications": [
     "evgeniy@gmail.com",
     "vasiliy@gmail.com"
@@ -53,7 +63,7 @@
 // [GET]
 //
 // IN
-// userid, userkey, ticketuid, created, slice
+// userid, userkey, ticketuid, date_created, slice
 //
 // OUT
 {
@@ -66,9 +76,8 @@
       "role": "client",
       "name": "Evgeniy",
       "email": "evgeniy@gmail.com",
-      "created": 1577102364,
+      "date_created": 1577102364,
       "message": "Здравствуйте. Заявка на рекламную кампанию уже больше 24 часов на рассмотрении.",
-      "unread": true,
       "files": [
         {
           "url": "/url/to/img.jpg"
@@ -79,7 +88,7 @@
 }
 // * * *
 // /api/deletemessage/
-// [PUT]
+// [POST]
 //
 // IN
 // userid, userkey, ticketuid, msguid
@@ -88,29 +97,11 @@
 // status
 //
 // * * *
-// /api/closeticket/
-// [PUT]
-// IN
-// userid, userkey, ticketuid
-//
-// OUT
-// status
-//
-// * * *
-// /api/openticket/
-// [PUT]
-// IN
-// userid, userkey, ticketuid
-//
-// OUT
-// status
-//
-// * * *
 // /api/addmessage/
-// [PUT]
+// [POST]
 //
 // IN
-// userid, userkey, ticketuid, msguid, message, created
+// userid, userkey, ticketuid, msguid, message, date_created
 //
 // OUT
 // status
@@ -120,17 +111,24 @@
 // [POST]
 // 
 // IN
-// userid, userkey, category, subject, message, created, notifications, files
+// userid, userkey, category, subject, message, date_created, notifications, files
 //
 // OUT
 // status
 //
 // * * *
 // /api/updateticket/
-// [PUT]
+// [POST]
 //
 // IN
-// userid, userkey, ticketuid, notifications, ...?
+// userid, userkey, ticketuid, notifications, status
 //
 // OUT
 // status
+//
+//
+// * * *
+// Как хендлить непрочитанные сообщения
+// 1. Попробовать хранить в localStorage
+// 2. Если в тикет ни разу не заходили, то помечать, как непрочитанный
+// 3. Если localStorage пустой, все тикеты помечаем, как прочитанные

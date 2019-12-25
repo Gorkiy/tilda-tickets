@@ -31,7 +31,7 @@
 
 .ticket__header {
   margin-right: 20px;
-  padding: 5px 0 10px 0;
+  padding: 5px 160px 10px 0;
 }
 
 .ticket__back-link {
@@ -117,6 +117,7 @@
 
   &--notifications {
     padding-top: 0;
+    padding-left: 8px;
     font-size: 14px;
   }
 
@@ -138,10 +139,10 @@
 }
 
 .ticket__close-link {
-  // position: absolute;
+  position: absolute;
   // margin: 0;
-  // right: 0;
-  // top: -6px;
+  right: 0;
+  top: 0;
   // margin-top: -5px;
   margin-top: 5px;
   margin-left: auto;
