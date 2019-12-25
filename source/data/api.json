@@ -18,6 +18,7 @@
         "status": "open",
         "created": 1577102364,
         "msgs_cnt": 4,
+        "unread": true,
         "notifications": [
           "evgeniy@gmail.com",
           "vasiliy@gmail.com"
@@ -41,6 +42,7 @@
   "status": "open",
   "created": 1577102364,
   "msgs_cnt": 4,
+  "unread": true,
   "notifications": [
     "evgeniy@gmail.com",
     "vasiliy@gmail.com"
@@ -66,6 +68,7 @@
       "email": "evgeniy@gmail.com",
       "created": 1577102364,
       "message": "Здравствуйте. Заявка на рекламную кампанию уже больше 24 часов на рассмотрении.",
+      "unread": true,
       "files": [
         {
           "url": "/url/to/img.jpg"
@@ -76,38 +79,42 @@
 }
 // * * *
 // /api/deletemessage/
-// [POST]
+// [PUT]
 //
 // IN
 // userid, userkey, ticketuid, msguid
 //
 // OUT
-// ...
+// status
+//
 // * * *
 // /api/closeticket/
-// [POST]
+// [PUT]
 // IN
 // userid, userkey, ticketuid
 //
 // OUT
-// ...
+// status
+//
 // * * *
 // /api/openticket/
-// [POST]
+// [PUT]
 // IN
 // userid, userkey, ticketuid
 //
 // OUT
-// ...
+// status
+//
 // * * *
 // /api/addmessage/
-// [POST]
+// [PUT]
 //
 // IN
 // userid, userkey, ticketuid, msguid, message, created
 //
 // OUT
-// ...
+// status
+//
 // * * *
 // /api/createticket
 // [POST]
@@ -116,22 +123,14 @@
 // userid, userkey, category, subject, message, created, notifications, files
 //
 // OUT
-// ...
+// status
+//
 // * * *
-// /api/addnotification/
-// [POST]
+// /api/updateticket/
+// [PUT]
 //
 // IN
-// userid, userkey, ticketuid, email
+// userid, userkey, ticketuid, notifications, ...?
 //
 // OUT
-// ...
-// * * *
-// /api/deletenotification/
-// [POST]
-//
-// IN
-// userid, userkey, ticketuid, email
-//
-// OUT
-// ...
+// status
